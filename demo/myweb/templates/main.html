@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Navigator</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div id="main-container">
+        <div id="logo">
+            <img src="/static/logo.png" alt="Code Navigator Logo">
+            <h1>Code Navigator</h1>
+        </div>
+        <div id="main-content">
+            <div class="course" onclick="navigateTo('html')">
+                <img src="/static/html.png" alt="HTML">
+                <h2>学习HTML</h2>
+            </div>
+            <div class="course" onclick="navigateTo('python')">
+                <img src="/static/python.png" alt="Python">
+                <h2>学习Python</h2>
+            </div>
+            <div class="course" onclick="navigateTo('javascript')">
+                <img src="/static/javascript.png" alt="JavaScript">
+                <h2>学习JavaScript</h2>
+            </div>
+        </div>
+    </div>
+    <script>
+        function navigateTo(page) {
+            switch (page) {
+                case 'html':
+                    window.location.href = '/html.html';
+                    break;
+                case 'python':
+                    window.location.href = '/python.html';
+                    break;
+                case 'javascript':
+                    window.location.href = '/javascript.html';
+                    break;
+                default:
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
