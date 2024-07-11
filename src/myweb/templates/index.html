@@ -63,6 +63,7 @@
           text-align: center;
         }
         .call-to-action {
+          
           margin-bottom: 40px;
           
         }
@@ -80,6 +81,7 @@
           padding: 40px;
           text-align: center;
         }
+        
       </style>
     <!--<link rel="stylesheet" href="styles.css">-->
 </head>
@@ -91,7 +93,7 @@
 
     <nav>
         <ul class="center-buttons">
-             <li><a href="{%url'index'%}" class="styled-button">首页</a></li>
+             <li><a href="{% url 'again' %}" class="styled-button">首页</a></li>
              <li><a href="{% url 'lan' %}" class="styled-button">语言乐园</a></li>
             <li><a href="{% url 'ret' %}" class="styled-button">结束页面</a></li>
         </ul>
@@ -101,10 +103,13 @@
     <p>欢迎来到CodeNavigator，这是一个编程语言的学习导航网站，点击下方登陆注册开始你的编程之旅吧！
         
     </p>
-
+    
     <nav class="center-buttons">
-        <button onclick="window.location.href='login.html';">登陆</button>
-        <button onclick="window.location.href='register.html';">注册</button>
+      <!--<a href = "{% url 'login' %}" class="call-to-action">点击启程</a>-->
+      <button type="button" onclick="navigateTo('login')">登陆</button>
+      <button type="button" onclick="navigateTo('register')">注册</button>
+      
+      
     </nav>
 
     <footer>

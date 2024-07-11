@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>code navagitor登陆</title>
     <link rel="stylesheet" href="styles.css">
+    
             <style>
         body {
           font-family: Arial, sans-serif;
@@ -116,13 +117,18 @@
           <label for="password">密码PASSWORD:</label>
           <input type="password" id="password" name="password" placeholder="Enter your password"required><br><br>
           <!--<input type="submit" value="登录">-->
+          
           <button type="button" onclick="navigateTo('lan')">登陆</button>
+          <script src="script.js"></script>
         </form>
         <ul class="bottom-nav">
-            <li><a href="register.html">注册新用户</a></li>
+          
+            <li><a href="{% url 'register'%}">注册新用户</a></li>
             <!--<li><a href="forgot-password.html">忘记密码</a></li>-->
         </ul>
     </div>
+    
+
     
 
     <button class="back-button" onclick="goBack()">Back</button>

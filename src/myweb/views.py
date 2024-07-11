@@ -5,9 +5,15 @@ from django.shortcuts import render
 
 #定义函数1
 def index(request):
-    return render(request,"index.html")#返回一个响应HTTPresponse
+    return render(request,"index.html",{})#返回一个响应HTTPresponse
 
+def home(request):
+    print("enter home")
+    return render(request,"index.html",{})
 # src/myweb/views.py
+
+def again(request):
+    return render(request,"index.html",{})
 
 def lan(request):
     return render(request, 'lan.html')
@@ -16,7 +22,7 @@ def login(request):
     return render(request,'login.html')
 
 def register(request):
-    return render(request,'login.html')
+    return render(request,'register.html')
 
 def python(request):
     return render(request, 'lan.html')

@@ -2,28 +2,31 @@ function goBack() {
     window.history.back();
 }
 
+
+
 function navigateTo(page) {
+    
     switch (page) {
         case 'index':
-            window.location.href = 'index.html';
+            window.location.href = '{% url "index"%}';
             break;
         case 'C++':
-            window.location.href = 'C++.html';
+            window.location.href = '{% url "C++"%}';
             break;
         case 'python':
-            window.location.href = 'python.html';
+            window.location.href = '{% url "python"%}';
             break;
         case 'css':
-            window.location.href = 'css.html';
+            window.location.href = '{% url "css"%}';
             break;
         case 'lan':
-             window.location.href = 'lan.html';
+             window.location.href = '{% url "lan"%}';
              break;
         case 'return':
-             window.location.href = 'return.html';
+             window.location.href = '{% url "ret"%}';
              break;     
         case 'end':
-            window.location.href = 'end.html';
+            window.location.href = '{% url "end"%}';
             break;          
         default:
             break;

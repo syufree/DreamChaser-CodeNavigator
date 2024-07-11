@@ -19,6 +19,8 @@ from . import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$', views.home),
+    url('again/', views.again, name='again'),
     url('index/', views.index, name='index'),
     url('lan/', views.lan, name='lan'),
     url('login/', views.login, name='login'),
@@ -27,5 +29,6 @@ urlpatterns = [
     url('C++/', views.Cpp, name='C++'),
     url('css/', views.css, name='css'),
     url('end/', views.end, name='end'),
-    url('return/', views.ret, name='return')
+    url('ret/', views.ret, name='ret')
+    #path('',views.again,name='again'),
 ]
