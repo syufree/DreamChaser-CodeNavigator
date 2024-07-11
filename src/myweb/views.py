@@ -25,7 +25,7 @@ def register(request):
     return render(request,'register.html')
 
 def python(request):
-    return render(request, 'lan.html')
+    return render(request, 'python.html')
 
 def Cpp(request):
     return render(request, 'C++.html')

@@ -10,6 +10,7 @@ urlpatterns = [
      path('lan/', views.lan, name='lan'),
      path('ret/', views.ret, name='ret'),
     path('login/', views.login, name='login'),
+    path('python',views.python,name='python'),
     path('register/', views.register, name='register'),
     #path('admin/', admin.site.urls),
 ]
