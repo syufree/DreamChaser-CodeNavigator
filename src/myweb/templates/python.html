@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Tutorial</title>
+    <!--<link rel="stylesheet" href="styles.css">-->
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #bdbcbc;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tutorial-container {
+    background-color: rgb(245, 246, 247);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1400px;
+    width: 100%;
+    align-items: center;
+}
+h1{
+    background-color: #8e9fbe;
+    padding: 20px;
+    color: #191515;
+    align-items: center;
+}
+h2, h3 {
+    color: #333;
+    align-items: center;
+}
+
+pre {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    align-items: center;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.example-image {
+    display: block;
+    margin: 10px 0;
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #414e86;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.content-left, .content-right {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.content-left {
+    border-right: 1px solid #ddd;
+}
+
+.answer {
+    display: none;
+    background-color: #e7f4e4;
+    border-left: 5px solid #4CAF50;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+        </style>
+</head>
+<body>
+    <div class="tutorial-container">
+        <h1>Python 基础教程</h1>
+
+
+        <section class="tutorial-section">
+
+            <div class="content-left">
+                <h2>变量</h2>
+                <p>在 Python 中，变量用于存储数据值。使用赋值运算符 <code>=</code> 进行赋值。</p>
+                <pre><code>my_variable = 10
+print(my_variable)</code></pre>
+                <img src="python_variable_output.png" alt="Python Variable Output" class="example-image">
+            </div>
+
+            <div class="content-right">
+                <h3>练习</h3>
+                <p>创建一个变量 <code>my_name</code> 并将其设置为您的名字为“name”，然后打印该变量。</p>
+                <pre><code>#your code</code></pre>
+                <textarea id="exercise1" rows="4" cols="50"></textarea><br>
+                <button onclick="checkAnswer('exercise1', 'answer1', `my_name = 'Your Name'\nprint(my_name)`)">提交答案</button>
+                <p id="answer1" class="answer"></p>
+                <button onclick="showAnswer('answer1')">显示答案</button>
+                <p id="answer1" class="answer">my_name = "Your Name"<br>print(my_name)</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <div class="content-left">
+
+
+                <h2>函数</h2>
+                <p>函数是执行特定任务的一段代码。可以使用 <code>def</code> 关键字定义函数。</p>
+                <pre><code>def greet(name):
+    return f"Hello, {name}!"
+
+print(greet("Alice"))</code></pre>
+                <img src="python_function_output.png" alt="Python Function Output" class="example-image">
+            </div>
+            <div class="content-right">
+
+                <h3>练习</h3>
+                <p>定义一个函数 <code>add_numbers</code>，接受两个参数并返回它们的和。然后调用该函数并打印结果。</p>
+                <pre><code>#your code</code></pre>
+                <textarea id="exercise2" rows="4" cols="50"></textarea><br>
+                <button onclick="checkAnswer('exercise2', 'answer2', `def add_numbers(a, b):\n    return a + b\n\nprint(add_numbers(5, 3))`)">提交答案</button>
+                <p id="answer2" class="answer"></p>
+                <button onclick="showAnswer('answer2')">显示答案</button>
+                <p id="answer2" class="answer">def add_numbers(a, b):<br>return a + b<br>print(add_numbers(5, 3))</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <div class="content-left">
+                <h2>条件语句</h2>
+                <p>条件语句根据条件的真假执行不同的代码块。</p>
+                <pre><code>if x > 0:
+    print("x is positive")
+elif x == 0:
+    print("x is zero")
+else:
+    print("x is negative")</code></pre>
+            </div>
+            <div class="content-right">
+                <h3>练习</h3>
+                <p>编写条件语句判断一个数是奇数还是偶数。</p>
+                <pre><code>num = 4
+                # Your code here</code></pre>
+                <button onclick="showAnswer('answer3')">显示答案</button>
+                <p id="answer3" class="answer">num = 4<br>if num % 2 == 0:<br>&nbsp;&nbsp;&nbsp;&nbsp;print("Even")<br>else:<br>&nbsp;&nbsp;&nbsp;&nbsp;print("Odd")</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <div class="content-left">
+                <h2>循环</h2>
+                <p>循环用于重复执行某段代码。</p>
+                <pre><code>for i in range(5):
+    print(i)</code></pre>
+            </div>
+            <div class="content-right">
+                <h3>练习</h3>
+                <p>使用循环打印 1 到 10 的所有数字。</p>
+                <pre><code># Your code here</code></pre>
+                
+                
+                
+                <button onclick="showAnswer('answer4')">显示答案</button>
+                <p id="answer4" class="answer">for i in range(1, 11):<br>&nbsp;&nbsp;&nbsp;&nbsp;print(i)</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <div class="content-left">
+                <h2>列表</h2>
+                <p>列表是一个有序的集合，可以存储多个值。</p>
+                <pre><code>fruits = ["apple", "banana", "cherry"]
+print(fruits[1])</code></pre>
+            </div>
+            <div class="content-right">
+                <h3>练习</h3>
+                <p>创建一个列表，包含三个城市的名称，然后打印第二个城市。</p>
+                <pre><code># Your code here</code></pre>
+                
+                
+                <button onclick="showAnswer('answer5')">显示答案</button>
+                <p id="answer5" class="answer">cities = ["New York", "Los Angeles", "Chicago"]<br>print(cities[1])</p>
+            </div>
+        </section>
+
+        <button class="back-button" onclick="goBack()">Back</button>
+        <button type="button" onclick="navigateTo('return')">继续学习</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>语言选择</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    header {
+        background-color: #2f3540;
+        color: #cecccc;
+        padding: 40px;
+        text-align: center;
+      }
+      nav {
+  background-color: #f4f4f4;
+  padding: 20px;
+  margin: 10px;
+  background-color: #91a1a3; 
+  color: white;             /* White text */
+  padding: 15px 30px;       /* Padding around the text */
+  cursor: pointer;          /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover*/
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  font-size: 15px; /* Larger font size */
+  font-family: 'Arial', sans-serif; /* Change the font-family */
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+nav ul li {
+  display: inline;
+  margin-right: 100px;
+}
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  padding: 40px;
+}  
+
+/*以上是header和标签*/
+.language-selection {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allow wrapping to new lines on smaller screens */
+}
+
+.language-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 50px;
+    max-width: 250px;
+    transition: transform 0.2s;
+    margin: 10px; /* Add margin for spacing around cards */
+}
+
+.language-card img {
+    width: 100px;
+    height: auto;
+}
+
+.language-card:hover {
+    transform: scale(1.05);
+}
+
+h1, h2 {
+    margin: 22;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+h2 a {
+    text-decoration: #1d5860; /* Remove underline from links */
+    color: #2f3540; /* Inherit text color */
+}
+
+h2 a:hover {
+    color: #1a4f7a; /* Change color on hover */
+}
+
+p {
+    color: #666;
+}
+
+.language-card p {
+    margin-top: 10px;
+}
+
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <img src="logo.png" alt="Code Navigator Logo"style="height:20px;">
+        <h1>Code Navigator</h1>
+    </header>
+   
+    <nav>
+        <ul class="center-buttons">
+             <li><a href="index.html" class="styled-button">首页</a></li>
+             <li><a href="lan.html" class="styled-button">语言乐园</a></li>
+            <li><a href="return.html" class="styled-button">结束页面</a></li>
+        </ul>
+    </nav>
+
+    <h1>请选择你想学习的编程语言</h1>
+
+    <div class="language-selection">
+        <a href="python.html">
+        <div class="language-card">
+            <img src="python.png" alt="Python Logo">
+            <h2>Python</a></h2>
+            <p>Python是一种广泛使用的高级编程语言。</p>
+        </div>
+    </a>
+    
+        <div class="language-card">
+            <a href="C++.html">
+            <img src="C++.png" alt="C++ Logo">
+            <h2>C++</a></h2>
+            <p>C++是一种通用编程语言，具有面向对象的特性。</p>
+        </div>
+
+        <a href="css.html">
+        <div class="language-card">
+            <img src="css.png" alt="CSS Logo">
+            <h2>CSS</a></h2>
+            <p>CSS是一种用于描述HTML或XML文档样式的语言。</p>
+        </div>
+    </div>
+              
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

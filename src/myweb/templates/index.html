@@ -1,0 +1,115 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Navigator</title>
+    <style>
+        /* CSS样式 */
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f8f7f4;
+        }
+        header {
+          background-color: #2f3540;
+          color: #443030;
+          padding: 40px;
+          text-align: center;
+        }
+        nav {
+          background-color: #f4f4f4;
+          padding: 20px;
+          margin: 50px;
+          background-color: #91a1a3; 
+          color: white;             /* White text */
+          padding: 15px 30px;       /* Padding around the text */
+          cursor: pointer;          /* Pointer cursor on hover */
+          transition: background-color 0.3s; /* Smooth transition for hover*/
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+          font-size: 15px; /* Larger font size */
+          font-family: 'Arial', sans-serif; /* Change the font-family */
+        }
+        nav ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          text-align: center;
+        }
+        nav ul li {
+          display: inline;
+          margin-right: 10px;
+        }
+        nav ul li a {
+          color: #333;
+          text-decoration: none;
+          padding: 20px;
+        }
+        section {
+          padding: 50px;
+          text-align: center;
+        }
+        h1 {
+          font-size: 40px;
+          color: #edecec;
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 18px;
+          color: #5b5656;
+          margin-bottom: 150px;
+          text-align: center;
+        }
+        .call-to-action {
+          margin-bottom: 40px;
+          
+        }
+        .call-to-action a {
+          background-color: #333;
+          color: #fff;
+          text-decoration: none;
+          padding: 10px 20px;
+          font-size: 20px;
+          border-radius: 8px;
+        }
+        footer {
+          background-color: #2f3540;
+          color: #dedddd;
+          padding: 40px;
+          text-align: center;
+        }
+      </style>
+    <!--<link rel="stylesheet" href="styles.css">-->
+</head>
+<body>
+    <header>
+        <img src="{%static 'logo.png' %}" alt="Code Navigator Logo"style="height:20px;">
+        <h1>Code Navigator</h1>
+        </header>
+
+    <nav>
+        <ul class="center-buttons">
+             <li><a href="{%url'index'%}" class="styled-button">首页</a></li>
+             <li><a href="{% url 'lan' %}" class="styled-button">语言乐园</a></li>
+            <li><a href="{% url 'ret' %}" class="styled-button">结束页面</a></li>
+        </ul>
+    </nav>
+                
+
+    <p>欢迎来到CodeNavigator，这是一个编程语言的学习导航网站，点击下方登陆注册开始你的编程之旅吧！
+        
+    </p>
+
+    <nav class="center-buttons">
+        <button onclick="window.location.href='login.html';">登陆</button>
+        <button onclick="window.location.href='register.html';">注册</button>
+    </nav>
+
+    <footer>
+        <p>版权所有 &copy; 2024 DreamChaser</p>
+      </footer>
+
+</body>
+</html>

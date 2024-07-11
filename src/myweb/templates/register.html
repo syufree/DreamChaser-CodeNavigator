@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+   <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+<style>
+     header {
+     background-color: #2f3540;
+     color: #ffffff;
+     padding: 15px;
+     text-align: center;
+ }
+        h2 a{
+        width: 50px;
+        color: black;
+        text-align: left;
+        padding: 12px;
+        text-decoration: none;
+        font-weight:bold;
+    }
+    
+    h2:hover{
+        width: 72px;
+        height: 36px;
+        background-color: #DDDDDD;
+        border-radius: 10px;
+    }
+    
+    .container {
+      max-width: 550px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1)
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    label {
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    
+    input[type="password"] {
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 3px;
+      border: 1px solid #3b3737;
+    }
+    
+    input[type="submit"] {
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #DDDDDD;
+    }
+    
+    .container ul.bottom-nav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    
+    .container ul.bottom-nav li{
+        float: center;
+    }
+    
+    .container ul.bottom-nav li a {
+      display: inside;
+      color: #2e5576;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: color;
+      font-weight:bold;
+    }
+  </style>
+  <script>
+    //
+  </script>
+<script src="script.js"></script>
+    
+
+ </head>
+
+<body>
+
+    <header>
+        <h1>Code Navigator</h1>
+    </header>
+
+    <div class="container">
+        <h1>用户注册</h1>
+        <form action="/submit-registration" method="post">
+            <label for="username">用户名:</label>
+            <input type="text" name="username" placeholder="Choose a username"required><br>
+            <label for="password">邮箱:</label>
+            <input type="email" name="email" placeholder="Enter your email"><br>
+            <label for="password">密码:</label>
+            <input type="password" name="password" placeholder="Create a password"><br>
+            <label for="password">确认密码:</label>
+            <input type="password" name="password" placeholder="Confirm your password"><br>
+            <button type="button" onclick="navigateTo('lan')">注册</button><br><br>
+        </form>
+
+        <ul class="bottom-nav">
+            <li><a href="login.html">已经有用户了？点此登陆</a></li>
+            <!--<li><a href="forgot-password.html">忘记密码</a></li>-->
+        </ul>
+
+    </div>
+    <button class="back-button" onclick="goBack()">Back</button>
+    <script src="script.js"></script>
+</body>
+</html>

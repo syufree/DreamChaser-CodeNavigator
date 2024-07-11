@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code navagitor登陆</title>
+    <link rel="stylesheet" href="styles.css">
+            <style>
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f2f2f2;
+          padding-bottom: 50px;
+        }
+        header {
+            background-color: #2f3540;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+        }
+        h2 a{
+            width: 50px;
+            color: black;
+            text-align: left;
+            padding: 12px;
+            text-decoration: none;
+            font-weight:bold;
+        }
+    
+        h2:hover{
+            width: 72px;
+            height: 36px;
+            background-color: #DDDDDD;
+            border-radius: 10px;
+        }
+    
+        .container {
+          max-width: 500px;
+          margin: 0 auto;
+          background-color: #ffffff;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+        }
+    
+        form {
+          display: flex;
+          flex-direction: column;
+        }
+    
+        label {
+          font-weight: bold;
+          margin-bottom: 30px;
+        }
+    
+        input[type="text"],
+        input[type="password"] {
+          padding: 10px;
+          margin-bottom: 10px;
+          border-radius: 3px;
+          border: 1px solid #ccc;
+        }
+    
+        input[type="submit"] {
+          padding: 10px;
+          background-color: #333;
+          color: #fff;
+          border: none;
+          border-radius: 3px;
+          cursor: pointer;
+        }
+    
+        input[type="submit"]:hover {
+          background-color: #DDDDDD;
+        }
+    
+        .container ul.bottom-nav {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          background-color: #FFFFFF;
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+        }
+    
+        .container ul.bottom-nav li{
+            float: center;
+        }
+    
+        .container ul.bottom-nav li a {
+          display: inside;
+          color: black;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: color;
+          font-weight:bold;
+        }
+      </style>
+      <script>
+        //
+      </script>
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    <header>
+        <h1>Code Navigator</h1>
+    </header>
+
+    <div class="container">
+        <h1>用户登录</h1>
+        <form id="loginForm" action="/Login" method="POST">
+          <label for="username">用户名EMAIL:</label>
+          <input type="text" id="username" name="username" placeholder="Enter your email"required><br><br>
+          <label for="password">密码PASSWORD:</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password"required><br><br>
+          <!--<input type="submit" value="登录">-->
+          <button type="button" onclick="navigateTo('lan')">登陆</button>
+        </form>
+        <ul class="bottom-nav">
+            <li><a href="register.html">注册新用户</a></li>
+            <!--<li><a href="forgot-password.html">忘记密码</a></li>-->
+        </ul>
+    </div>
+    
+
+    <button class="back-button" onclick="goBack()">Back</button>
+  
+    <script src="script.js"></script>
+   
+   
+   
+   
+   
+
+    
+</body>
+</html>

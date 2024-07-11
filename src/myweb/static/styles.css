@@ -1,0 +1,63 @@
+body {
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+    align-items: center;
+}
+header {
+    background-color: green;
+    border-bottom: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+}
+.form-container {
+    border: 2px solid orange;
+    margin: 50px auto;
+    padding: 20px;
+    width: 300px;
+}
+.back-button {
+    background-color: #89939c;
+    color: rgb(0, 0, 0);             
+    position: fixed;
+    top: 7px;
+    right: 7px;
+    padding: 4px px;
+}
+.language-container, .tutorial-container {
+    max-width: 550px;
+margin: 0 auto;
+background-color: #d3d0d0;
+padding: 400px;
+border-radius: 10px;
+box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgb(55, 68, 141);
+    width: 700px;
+    text-align: center;
+}
+button {
+    margin: 50px;
+    background-color: #2e5576; /* Green background */
+    color: white;             /* White text */
+    padding: 10px 20px;       /* Padding around the text */
+    border: 2px solid #555555;             /* No border */
+    border-radius: 5px;       /* Rounded corners */
+    cursor: pointer;          /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    font-size: 15px; /* Larger font size */
+    font-family: 'Arial', sans-serif; /* Change the font-family */
+}
+.button-basic:hover {
+    background-color: #555555;
+    color: white;
+}
+.button-basic {
+    font-family: 'Roboto', sans-serif;
+}
+
+.center-buttons {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 10px; /* Space between buttons */
+    margin-top: 20px; /* Space above the buttons */
+}
