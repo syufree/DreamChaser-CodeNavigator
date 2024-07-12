@@ -1,0 +1,347 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Learning Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            margin: 20px;
+            height: 750px; /* 设置容器的高度 */
+        }
+
+        .knowledge-panel {
+            flex: 1;
+            background-color: #fff;
+            padding: 20px;
+            margin-right: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-height: 700px; /* 限制左侧面板的高度 */
+            overflow-y: auto; /* 使内容可滚动 */
+        }
+
+        .info-panel {
+            flex: 1.5; /* 调整右侧面板的占比 */
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-height: 700px; /* 限制右侧面板的高度 */
+            overflow-y: auto; /* 使内容可滚动 */
+        }
+
+        .knowledge-panel h2,
+        .info-panel h2 {
+            color: #333;
+        }
+
+        .knowledge-panel ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .knowledge-panel li {
+            background: #e2e2e2;
+            margin: 5px 0; /* 调整上下间距 */
+            padding: 5px; /* 调整内边距 */
+            border-radius: 3px;
+            font-size: 14px; /* 调整字体大小 */
+        }
+
+        .knowledge-panel li a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+
+        .info-panel img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加阴影 */
+            border: 2px solid #ddd; /* 添加边框 */
+            padding: 5px; /* 边框内边距 */
+        }
+
+        .logo {
+            margin-left: 10px;
+            margin-top: 10px;
+            width: 50px;
+            height: 50px;
+            float: left;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="{% static 'img/logo.jpg' %}" class="logo">
+    <h1>CSSNavigator</h1>
+    <h3>学习CSS 在这里你可以找到关于CSS的基础知识和高级技巧</h3>
+
+    <div class="navbar">
+        <a href="/myapp/cssl">实践测试</a>
+        <a href="/myapp/index">返回上一页</a>
+    </div>
+
+    <div class="container">
+        <div class="knowledge-panel">
+            <h2>CSS 知识</h2>
+            <ul>
+                <li><a href="#css-intro">CSS 介绍</a></li>
+                <li><a href="#selectors">选择器</a></li>
+                <li><a href="#box-model">盒子模型</a></li>
+                <li><a href="#flexbox">Flexbox</a></li>
+                <li><a href="#grid">Grid 布局</a></li>
+                <li><a href="#typography">排版</a></li>
+                <li><a href="#backgrounds">背景</a></li>
+                <li><a href="#borders">边框</a></li>
+                <li><a href="#animations">动画</a></li>
+                <li><a href="#transitions">过渡</a></li>
+                <li><a href="#media-queries">媒体查询</a></li>
+                <li><a href="#responsive-design">响应式设计</a></li>
+                <li><a href="#pseudo-classes">伪类</a></li>
+                <li><a href="#pseudo-elements">伪元素</a></li>
+                <li><a href="#variables">CSS 变量</a></li>
+                <li><a href="#functions">CSS 函数</a></li>
+                <li><a href="#specificity">优先级</a></li>
+                <li><a href="#positioning">定位</a></li>
+                <li><a href="#transforms">变换</a></li>
+                <li><a href="#filters">滤镜</a></li>
+            </ul>
+        </div>
+
+        <div class="info-panel">
+            <h2 id="css-intro">CSS 介绍</h2>
+            <p>CSS（Cascading Style Sheets，层叠样式表）是一种用于描述HTML或XML文档外观和格式的样式表语言。</p>
+            <img src="{% static 'img/css.png' %}" class="css logo"><br><br><br>
+            
+            <h2 id="selectors">选择器</h2>
+            <p>CSS选择器用于选取需要添加样式的HTML元素。常见的选择器包括元素选择器、类选择器和ID选择器。</p>
+            <pre><code>/* 元素选择器 */
+p {
+    color: blue;
+}
+
+/* 类选择器 */
+.intro {
+    font-size: 20px;
+}
+
+/* ID选择器 */
+#header {
+    background-color: yellow;
+}</code></pre>
+
+            <h2 id="box-model">盒子模型</h2>
+            <p>CSS盒子模型用于描述HTML元素的布局，包括内容（content）、内边距（padding）、边框（border）和外边距（margin）。</p>
+            <pre><code>div {
+    width: 100px;
+    padding: 10px;
+    border: 5px solid black;
+    margin: 20px;
+}</code></pre>
+
+            <h2 id="flexbox">Flexbox</h2>
+            <p>Flexbox布局模型用于创建灵活的响应式布局结构。</p>
+            <pre><code>.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    flex: 1;
+}</code></pre>
+
+            <h2 id="grid">Grid 布局</h2>
+            <p>CSS Grid布局是一种强大的二维布局系统。</p>
+            <pre><code>.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+
+.grid-item {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+}</code></pre>
+
+            <h2 id="typography">排版</h2>
+            <p>CSS排版属性用于设置字体、大小、颜色和行高等。</p>
+            <pre><code>body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}</code></pre>
+
+            <h2 id="backgrounds">背景</h2>
+            <p>CSS背景属性用于设置元素的背景颜色、图像等。</p>
+            <pre><code>body {
+    background-color: #f0f0f0;
+    background-image: url('background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}</code></pre>
+
+            <h2 id="borders">边框</h2>
+            <p>CSS边框属性用于设置元素的边框样式、宽度和颜色。</p>
+            <pre><code>p {
+    border: 1px solid black;
+    border-radius: 5px;
+}</code></pre>
+
+            <h2 id="animations">动画</h2>
+            <p>CSS动画用于创建逐帧动画效果。</p>
+            <pre><code>@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+}</code></pre>
+
+            <h2 id="transitions">过渡</h2>
+            <p>CSS过渡用于在属性值变化时控制动画效果。</p>
+            <pre><code>div {
+    transition: width 2s;
+}
+
+div:hover {
+    width: 200px;
+}</code></pre>
+
+            <h2 id="media-queries">媒体查询</h2>
+            <p>CSS媒体查询用于根据不同设备条件应用不同的样式。</p>
+            <pre><code>@media screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}</code></pre>
+
+            <h2 id="responsive-design">响应式设计</h2>
+            <p>响应式设计通过使用灵活的网格布局、灵活的图像和CSS媒体查询来适应不同的设备和屏幕尺寸。</p>
+            <pre><code>.container {
+    max-width: 100%;
+    padding: 0 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}</code></pre>
+
+            <h2 id="pseudo-classes">伪类</h2>
+            <p>CSS伪类用于选择元素的特殊状态。</p>
+            <pre><code>a:hover {
+    color: red;
+}
+
+input:focus {
+    border-color: blue;
+}</code></pre>
+
+            <h2 id="pseudo-elements">伪元素</h2>
+            <p>CSS伪元素用于选择元素的某个部分。</p>
+            <pre><code>p::first-line {
+    color: blue;
+    font-weight: bold;
+}
+
+div::before {
+    content: "Note: ";
+    color: red;
+}</code></pre>
+
+            <h2 id="variables">CSS 变量</h2>
+            <p>CSS变量（自定义属性）用于存储属性值，以便在多个地方重复使用。</p>
+            <pre><code>:root {
+    --main-bg-color: lightblue;
+}
+
+body {
+    background-color: var(--main-bg-color);
+}</code></pre>
+
+            <h2 id="functions">CSS 函数</h2>
+            <p>CSS函数用于执行计算或操作，如 calc()、var() 等。</p>
+            <pre><code>div {
+    width: calc(100% - 50px);
+    background-color: var(--main-bg-color);
+}</code></pre>
+
+            <h2 id="specificity">优先级</h2>
+            <p>CSS优先级用于确定应用哪条规则。</p>
+            <pre><code>/* 优先级顺序：ID > 类 > 元素 */
+#header {
+    color: red;
+}
+
+.intro {
+    color: blue;
+}
+
+p {
+    color: green;
+}</code></pre>
+
+            <h2 id="positioning">定位</h2>
+            <p>CSS定位属性用于定位元素。</p>
+            <pre><code>div {
+    position: relative;
+    top: 10px;
+    left: 20px;
+}</code></pre>
+
+            <h2 id="transforms">变换</h2>
+            <p>CSS变换属性用于旋转、缩放、倾斜或平移元素。</p>
+            <pre><code>div {
+    transform: rotate(45deg);
+}</code></pre>
+
+            <h2 id="filters">滤镜</h2>
+            <p>CSS滤镜属性用于应用图像效果，如模糊、灰度等。</p>
+            <pre><code>img {
+    filter: grayscale(100%);
+}</code></pre>
+        </div>
+    </div>
+
+</body>
+</html>

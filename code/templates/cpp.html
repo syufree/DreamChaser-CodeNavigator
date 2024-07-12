@@ -1,0 +1,529 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ Tutorial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #bdbcbc;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .tutorial-container {
+            background-color: rgb(245, 246, 247);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 1400px;
+            width: 100%;
+            align-items: center;
+        }
+
+        h1 {
+            background-color: #8e9fbe;
+            padding: 20px;
+            color: #191515;
+            text-align: center;
+            width: 100%;
+        }
+
+        h2,
+        h3 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        pre {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .example-image {
+            display: block;
+            margin: 10px 0;
+            max-width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #414e86;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 0;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .content-left,
+        .content-right {
+            flex: 1;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .content-left {
+            border-right: 1px solid #ddd;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #414e86;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #45a049;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #414e86;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #45a049;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #414e86;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #45a049;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #414e86;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #45a049;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #414e86;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #45a049;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #414e86;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #45a049;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #414e86;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #45a049;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #414e86;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #45a049;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #414e86;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #45a049;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #414e86;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #45a049;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #414e86;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #45a049;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #414e86;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #45a049;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #414e86;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .answer {
+            display: none;
+            background-color: #e7f4e4;
+            border-left: 5px solid #4CAF50;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .options {
+            margin-bottom: 10px;
+        }
+
+        .feedback {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .correct {
+            background-color: #d4edda;
+            border-left: 5px solid #28a745;
+        }
+
+        .incorrect {
+            background-color: #f8d7da;
+            border-left: 5px solid #dc3545;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tutorial-container">
+        <h1>C++ 基础教程</h1>
+
+        <div class="container">
+            <div class="content-left">
+                <h2>C++ 简介</h2>
+                <p>C++ 是一种通用的编程语言，具有面向对象和泛型编程功能。</p>
+                <pre><code>#include &lt;iostream&gt;
+
+int main() {
+    std::cout << "Hello, World!" << std::endl;
+    return 0;
+}</code></pre>
+                <img src="{%static 'img/cpp_example_output.png'%}" alt="C++ Example Output" class="example-image">
+
+                <h2>变量</h2>
+                <p>在 C++ 中，变量用于存储数据值。可以使用各种数据类型声明变量，如 <code>int</code>、<code>float</code> 等。</p>
+                <pre><code>int my_variable = 10;
+std::cout << my_variable << std::endl;</code></pre>
+                <img src="{%static 'img/cpp_variable_output.png'%}" alt="C++ Variable Output" class="example-image">
+
+                <h2>条件语句</h2>
+                <p>条件语句根据条件的真假执行不同的代码块。常见的条件语句有 <code>if</code>、<code>else if</code> 和 <code>else</code>。</p>
+                <pre><code>int x = 10;
+if (x > 0) {
+    std::cout << "x is positive" << std::endl;
+} else if (x == 0) {
+    std::cout << "x is zero" << std::endl;
+} else {
+    std::cout << "x is negative" << std::endl;
+}</code></pre>
+                <img src="{%static 'img/cpp_conditional_output.png'%}" alt="C++ Conditional Output" class="example-image">
+
+                <h2>循环</h2>
+                <p>循环用于重复执行某段代码。C++ 支持 <code>for</code> 循环和 <code>while</code> 循环。</p>
+                <pre><code>for (int i = 0; i < 5; i++) {
+    std::cout << i << std::endl;
+}</code></pre>
+                <img src="{%static 'img/cpp_loop_output.png'%}" alt="C++ Loop Output" class="example-image">
+
+                <h2>函数</h2>
+                <p>函数是执行特定任务的一段代码。可以使用 <code>return</code> 关键字返回值。</p>
+                <pre><code>int add(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    int result = add(5, 3);
+    std::cout << result << std::endl;
+    return 0;
+}</code></pre>
+                <img src="{%static 'img/cpp_function_output.png'%}" alt="C++ Function Output" class="example-image">
+            </div>
+
+            <div class="content-right">
+                <h2>选择题测试以及部分练习</h2>
+                <p>请选择正确的答案。</p>
+
+                <h3>问题 1：C++ 中用于输出的对象是？</h3>
+                <div class="options">
+                    <input type="radio" id="q1a" name="q1" value="a">
+                    <label for="q1a">cout</label><br>
+                    <input type="radio" id="q1b" name="q1" value="b">
+                    <label for="q1b">output</label><br>
+                    <input type="radio" id="q1c" name="q1" value="c">
+                    <label for="q1c">print</label><br>
+                    <input type="radio" id="q1d" name="q1" value="d">
+                    <label for="q1d">write</label>
+                </div>
+                <button onclick="checkQuizAnswer('q1', 'a', 'feedback1')">提交答案</button>
+                <div id="feedback1" class="feedback"></div>
+
+                <h3>问题 2：C++ 中用于定义变量的关键字是？</h3>
+                <div class="options">
+                    <input type="radio" id="q2a" name="q2" value="a">
+                    <label for="q2a">var</label><br>
+                    <input type="radio" id="q2b" name="q2" value="b">
+                    <label for="q2b">let</label><br>
+                    <input type="radio" id="q2c" name="q2" value="c">
+                    <label for="q2c">int</label><br>
+                    <input type="radio" id="q2d" name="q2" value="d">
+                    <label for="q2d">define</label>
+                </div>
+                <button onclick="checkQuizAnswer('q2', 'c', 'feedback2')">提交答案</button>
+                <div id="feedback2" class="feedback"></div>
+
+                <h3>问题 3：C++ 中用于创建函数的关键字是？</h3>
+                <div class="options">
+                    <input type="radio" id="q3a" name="q3" value="a">
+                    <label for="q3a">func</label><br>
+                    <input type="radio" id="q3b" name="q3" value="b">
+                    <label for="q3b">function</label><br>
+                    <input type="radio" id="q3c" name="q3" value="c">
+                    <label for="q3c">def</label><br>
+                    <input type="radio" id="q3d" name="q3" value="d">
+                    <label for="q3d">int</label>
+                </div>
+                <button onclick="checkQuizAnswer('q3', 'd', 'feedback3')">提交答案</button>
+                <div id="feedback3" class="feedback"></div>
+
+                <h3>问题 4：C++ 中用于表示真或假的数据类型是？</h3>
+                <div class="options">
+                    <input type="radio" id="q4a" name="q4" value="a">
+                    <label for="q4a">int</label><br>
+                    <input type="radio" id="q4b" name="q4" value="b">
+                    <label for="q4b">float</label><br>
+                    <input type="radio" id="q4c" name="q4" value="c">
+                    <label for="q4c">bool</label><br>
+                    <input type="radio" id="q4d" name="q4" value="d">
+                    <label for="q4d">double</label>
+                </div>
+                <button onclick="checkQuizAnswer('q4', 'c', 'feedback4')">提交答案</button>
+                <div id="feedback4" class="feedback"></div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <a href="/myapp/index">继续学习</a>
+            <a href="/myapp/myself">结束学习</a>
+        </div>
+
+
+    </div>
+
+    <script>
+        function checkQuizAnswer(questionName, correctAnswer, feedbackId) {
+            const selectedOption = document.querySelector(`input[name="${questionName}"]:checked`);
+            const feedbackElement = document.getElementById(feedbackId);
+
+            if (selectedOption) {
+                if (selectedOption.value === correctAnswer) {
+                    feedbackElement.innerHTML = "正确答案！进入下一题...";
+                    feedbackElement.className = "feedback correct";
+                } else {
+                    feedbackElement.innerHTML = "选择错误，请重试。";
+                    feedbackElement.className = "feedback incorrect";
+                }
+            } else {
+                feedbackElement.innerHTML = "请选择一个答案。";
+                feedbackElement.className = "feedback incorrect";
+            }
+        }
+    </script>
+</body>
+
+</html>

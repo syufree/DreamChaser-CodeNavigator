@@ -1,0 +1,321 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        header {
+            background-color: #2f3540;
+            color: #cecccc;
+            padding: 40px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin: 10px;
+            background-color: #91a1a3;
+            color: white;
+            /* White text */
+            padding: 15px 30px;
+            /* Padding around the text */
+            cursor: pointer;
+            /* Pointer cursor on hover */
+            transition: background-color 0.3s;
+            /* Smooth transition for hover*/
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            font-size: 15px;
+            /* Larger font size */
+            font-family: 'Arial', sans-serif;
+            /* Change the font-family */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 100px;
+        }
+
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+            padding: 40px;
+        }
+
+        /*以上是header和标签*/
+        .language-selection {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 5px;
+            flex-wrap: wrap;
+            /* Allow wrapping to new lines on smaller screens */
+        }
+
+        .language-card {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 30px;
+            max-width: 250px;
+            transition: transform 0.2s;
+            margin: 10px;
+            /* Add margin for spacing around cards */
+        }
+
+        .language-card img {
+            width: 100px;
+            height: auto;
+        }
+
+        .language-card:hover {
+            transform: scale(1.05);
+        }
+
+        h1,
+        h2 {
+            margin: 22;
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        h2 a {
+            text-decoration: #1d5860;
+            /* Remove underline from links */
+            color: #2f3540;
+            /* Inherit text color */
+        }
+
+        h2 a:hover {
+            color: #1a4f7a;
+            /* Change color on hover */
+        }
+
+        p {
+            color: #666;
+        }
+
+        .language-card p {
+            margin-top: 10px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            font-size: 18px;
+            color: #5b5656;
+            margin-bottom: 150px;
+            text-align: center;
+        }
+
+        footer {
+     background-color: #2f3540;
+     color: #dedddd;
+     padding: 10px;
+     text-align: center;
+ }
+        footer {
+            background-color: #2f3540;
+            color: #dedddd;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .root {
+            float: left;
+            width: 100%;
+            height: 750px;
+            background-color: rgb(232, 239, 236);
+        }
+
+        .logo {
+            margin-left: 10px;
+            margin-top: 10px;
+            width: 50px;
+            height: 50px;
+            float: left;
+        }
+
+        h1 {
+            margin-top: 10px;
+            margin-left: 80px;
+            font-size: 40px;
+        }
+
+        .file {
+            margin-left: 400px;
+            margin-top: 20px;
+            width: 600px;
+            height: 600px;
+            background-color: azure;
+            color: #333;
+            /* 设置链接文字颜色 */
+            font-weight: bold;
+        }
+
+        .file li {
+            list-style: none;
+            float: left;
+            width: 300px;
+            height: 300px;
+            background-color: wheat;
+        }
+
+        /* .file li img{
+   width: 300px;
+   height: 250px;
+   } */
+        .file li a {
+            display: block;
+            width: 100%;
+            height: 300px;
+            text-align: center;
+            line-height: 300px;
+            font-size: 30px;
+            text-decoration: none;
+        }
+
+        .file li:first-child {
+            background-color: yellowgreen;
+        }
+
+        .file li:nth-child(2) {
+            background-color: rgb(208, 10, 129);
+        }
+
+        .file li:nth-child(3) {
+            background-color: rgb(9, 164, 76);
+        }
+
+        .file li:last-child {
+            background-color: turquoise;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="root">
+        <img src="{% static 'img/logo.jpg' %}" class="logo">
+
+        <header>
+            <img src="{%static 'img/logo.jpg' %}" alt="Code Navigator Logo" style="height:20px;">
+            <h1>Code Navigator</h1>
+        </header>
+
+
+        <nav>
+            <ul class="center-buttons">
+                <li>
+                    <a href="/myapp/login/">首页</a>
+                </li>
+                <li>
+                    <a href="/myapp/index/">语言乐园</a>
+                </li>
+                <li>
+                    <a href="/myapp/end/">结束</a>
+                </li>
+                <li>
+                    <a href="/myapp/myself/">我的</a>
+                </li>
+            </ul>
+        </nav>
+        <h1>CodeNavigator</h1>
+
+        <div class="language-selection">
+
+
+            <div class="language-card">
+                <a href="/myapp/python/">
+                    <img src="{% static 'img/python.png' %}" alt="Python Logo">
+                    <h2>Python
+
+                </a></h2>
+                <p>Python是一种广泛使用的高级编程语言。</p>
+            </div>
+
+
+            <div class="language-card">
+                <a href="/myapp/css/">
+                    <img src="{% static 'img/css.png' %}" alt="css Logo">
+                    <h2>CSS
+                </a></h2>
+                <p>CSS是一种用于描述HTML或XML文档样式的语言。</p>
+            </div>
+
+
+
+
+            <div class="language-card">
+                <a href="/myapp/html/">
+                    <img src="{% static 'img/C++.png' %}" alt="C++ Logo">
+                    <h2>C++
+                </a></h2>
+                <p>C++是一种面向对象高级编程语言</p>
+            </div>
+
+            <div class="language-card">
+                <a href="/myapp/javas/">
+                    <img src="{% static 'img/js.png' %}" alt="js Logo">
+                    <h2>JavaScript
+                </a></h2>
+                <p>JavaScript是好用的语言</p>
+            </div>
+
+        </div>
+
+    </div>
+    <!--
+    <ul class="file">
+        <li>
+            <img src="{% static 'img/R.jpg' %}" alt="Background Image" class="aa">
+
+
+            <a href="/myapp/html/">C++</a>
+            <img src="{% static 'img/C++.png' %}" class="logo">
+        </li>
+        <li>
+            <a href="/myapp/css/">CSS</a>
+        </li>
+        <li>
+            <a href="/myapp/javas/">JavaScript</a>
+        </li>
+        <li>
+            <a href="/myapp/python/">Python</a>
+        </li>
+    </ul>
+
+-->
+
+
+    <footer>
+        <p>CodeNavigator旅程马上开始</p>
+        <p>版权所有 &copy; 2024 DreamChaser</p>
+
+    </footer>
+
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,420 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ Learning Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            margin: 20px;
+            height: 750px;
+            /* 设置容器的高度 */
+        }
+
+        .knowledge-panel {
+            flex: 1;
+            background-color: #fff;
+            padding: 20px;
+            margin-right: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-height: 700px;
+            /* 限制左侧面板的高度 */
+            overflow-y: auto;
+            /* 使内容可滚动 */
+        }
+
+        .info-panel {
+            flex: 1.5;
+            /* 调整右侧面板的占比 */
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-height: 700px;
+            /* 限制右侧面板的高度 */
+            overflow-y: auto;
+            /* 使内容可滚动 */
+        }
+
+        .knowledge-panel h2,
+        .info-panel h2 {
+            color: #333;
+        }
+
+        .knowledge-panel ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .knowledge-panel li {
+            background: #e2e2e2;
+            margin: 5px 0;
+            /* 调整上下间距 */
+            padding: 5px;
+            /* 调整内边距 */
+            border-radius: 3px;
+            font-size: 14px;
+            /* 调整字体大小 */
+        }
+
+        .knowledge-panel li a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+
+        .info-panel img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            /* 添加阴影 */
+            border: 2px solid #ddd;
+            /* 添加边框 */
+            padding: 5px;
+            /* 边框内边距 */
+        }
+
+        .logo {
+            margin-left: 10px;
+            margin-top: 10px;
+            width: 50px;
+            height: 50px;
+            float: left;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="{% static 'img/logo.jpg' %}" class="logo">
+    <h1>C++ Navigator</h1>
+    <h3>学习C++ 在这里你可以找到关于C++的基础知识和高级技巧</h3>
+
+    <div class="navbar">
+        <a href="/myapp/cpp">实践测试</a>
+        <a href="/myapp/index">返回上一页</a>
+    </div>
+
+    <div class="container">
+        <div class="knowledge-panel">
+            <h2>C++ 知识</h2>
+            <ul>
+                <li><a href="#cpp-intro">C++ 介绍</a></li>
+                <li><a href="#syntax">语法基础</a></li>
+                <li><a href="#variables">变量和数据类型</a></li>
+                <li><a href="#control-structures">控制结构</a></li>
+                <li><a href="#functions">函数</a></li>
+                <li><a href="#classes">类和对象</a></li>
+                <li><a href="#inheritance">继承</a></li>
+                <li><a href="#polymorphism">多态</a></li>
+                <li><a href="#templates">模板</a></li>
+                <li><a href="#stl">标准模板库（STL）</a></li>
+                <li><a href="#exceptions">异常处理</a></li>
+                <li><a href="#file-io">文件输入输出</a></li>
+                <li><a href="#pointers">指针</a></li>
+                <li><a href="#references">引用</a></li>
+                <li><a href="#namespaces">命名空间</a></li>
+                <li><a href="#preprocessor">预处理器</a></li>
+                <li><a href="#multithreading">多线程</a></li>
+                <li><a href="#lambda">Lambda 表达式</a></li>
+                <li><a href="#smart-pointers">智能指针</a></li>
+                <li><a href="#move-semantics">移动语义</a></li>
+            </ul>
+        </div>
+
+        <div class="info-panel">
+            <h2 id="cpp-intro">C++ 介绍</h2>
+            <p>C++ 是一种广泛使用的编程语言，具有面向对象、泛型编程和低级内存操作等特性。</p>
+            <img src="{% static 'img/C++.png' %}" alt="C++ Logo">
+
+            <h2 id="syntax">语法基础</h2>
+            <p>C++ 语法包括变量声明、函数定义、控制结构等。</p>
+            <pre><code>#include &lt;iostream&gt;
+
+int main() {
+    std::cout << "Hello, World!" << std::endl;
+    return 0;
+}</code></pre>
+
+            <h2 id="variables">变量和数据类型</h2>
+            <p>C++ 支持多种数据类型，如整数、浮点数、字符和布尔值。</p>
+            <pre><code>int age = 25;
+float height = 5.9;
+char initial = 'A';
+bool is_student = true;</code></pre>
+
+            <h2 id="control-structures">控制结构</h2>
+            <p>C++ 支持常见的控制结构，如 if-else 语句、for 循环和 while 循环。</p>
+            <pre><code>if (age > 18) {
+    std::cout << "Adult" << std::endl;
+} else {
+    std::cout << "Minor" << std::endl;
+}
+
+for (int i = 0; i < 5; i++) {
+    std::cout << i << std::endl;
+}
+
+while (age < 30) {
+    age++;
+}</code></pre>
+
+            <h2 id="functions">函数</h2>
+            <p>函数用于组织代码，提高代码复用性。</p>
+            <pre><code>int add(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    int result = add(3, 4);
+    std::cout << "Result: " << result << std::endl;
+    return 0;
+}</code></pre>
+
+            <h2 id="classes">类和对象</h2>
+            <p>类是C++的基本构建模块，包含数据和操作数据的函数。</p>
+            <pre><code>class Person {
+public:
+    std::string name;
+    int age;
+
+    void greet() {
+        std::cout << "Hello, my name is " << name << std::endl;
+    }
+};
+
+int main() {
+    Person person;
+    person.name = "Alice";
+    person.age = 30;
+    person.greet();
+    return 0;
+}</code></pre>
+
+            <h2 id="inheritance">继承</h2>
+            <p>继承用于创建一个类，该类从另一个类继承属性和方法。</p>
+            <pre><code>class Animal {
+public:
+    void speak() {
+        std::cout << "Animal speaks" << std::endl;
+    }
+};
+
+class Dog : public Animal {
+public:
+    void bark() {
+        std::cout << "Dog barks" << std::endl;
+    }
+};
+
+int main() {
+    Dog dog;
+    dog.speak();
+    dog.bark();
+    return 0;
+}</code></pre>
+
+            <h2 id="polymorphism">多态</h2>
+            <p>多态允许用同一个接口调用不同的实现。</p>
+            <pre><code>class Base {
+public:
+    virtual void show() {
+        std::cout << "Base class" << std::endl;
+    }
+};
+
+class Derived : public Base {
+public:
+    void show() override {
+        std::cout << "Derived class" << std::endl;
+    }
+};
+
+int main() {
+    Base* basePtr;
+    Derived derived;
+    basePtr = &derived;
+    basePtr->show();
+    return 0;
+}</code></pre>
+
+            <h2 id="templates">模板</h2>
+            <p>模板允许编写泛型函数和类。</p>
+            <pre><code>template &lt;typename T&gt;
+T add(T a, T b) {
+    return a + b;
+}
+
+int main() {
+    std::cout << add(3, 4) << std::endl;
+    std::cout << add(3.5, 4.5) << std::endl;
+    return 0;
+}</code></pre>
+
+            <h2 id="stl">标准模板库（STL）</h2>
+            <p>STL 包含常用的数据结构和算法。</p>
+            <pre><code>#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+int main() {
+    std::vector&lt;int&gt; vec = {1, 2, 3, 4, 5};
+    for (int val : vec) {
+        std::cout << val << " ";
+    }
+    return 0;
+}</code></pre>
+
+            <h2 id="exceptions">异常处理</h2>
+            <p>异常处理用于捕获和处理运行时错误，避免程序崩溃。</p>
+            <pre><code>try {
+    int result = 10 / 0;
+} catch (std::exception& e) {
+    std::cerr << "Exception: " << e.what() << std::endl;
+}</code></pre>
+
+            <h2 id="file-io">文件输入输出</h2>
+            <p>C++ 提供了简单的文件读写操作，可以用 ifstream 和 ofstream 类。</p>
+            <pre><code>#include &lt;fstream&gt;
+
+int main() {
+    std::ofstream outfile("file.txt");
+    outfile << "Hello, World!" << std::endl;
+    outfile.close();
+
+    std::ifstream infile("file.txt");
+    std::string content;
+    std::getline(infile, content);
+    std::cout << content << std::endl;
+    infile.close();
+    return 0;
+}</code></pre>
+
+            <h2 id="pointers">指针</h2>
+            <p>指针用于存储变量的地址。</p>
+            <pre><code>int main() {
+    int a = 10;
+    int* ptr = &a;
+    std::cout << "Value of a: " << a << std::endl;
+    std::cout << "Address of a: " << ptr << std::endl;
+    std::cout << "Value at address: " << *ptr << std::endl;
+    return 0;
+}</code></pre>
+
+            <h2 id="references">引用</h2>
+            <p>引用是变量的别名，操作引用就像操作原变量。</p>
+            <pre><code>int main() {
+    int a = 10;
+    int& ref = a;
+    ref = 20;
+    std::cout << "Value of a: " << a << std::endl;
+    return 0;
+}</code></pre>
+
+            <h2 id="namespaces">命名空间</h2>
+            <p>命名空间用于防止命名冲突。</p>
+            <pre><code>namespace MyNamespace {
+    void display() {
+        std::cout << "Hello from MyNamespace" << std::endl;
+    }
+}
+
+int main() {
+    MyNamespace::display();
+    return 0;
+}</code></pre>
+
+            <h2 id="preprocessor">预处理器</h2>
+            <p>预处理器用于处理包含文件、宏定义等。</p>
+            <pre><code>#define PI 3.14
+
+int main() {
+    std::cout << "Value of PI: " << PI << std::endl;
+    return 0;
+}</code></pre>
+
+            <h2 id="multithreading">多线程</h2>
+            <p>C++11 提供了多线程编程支持。</p>
+            <pre><code>#include &lt;thread&gt;
+
+void print_numbers() {
+    for (int i = 0; i < 5; i++) {
+        std::cout << i << std::endl;
+    }
+}
+
+int main() {
+    std::thread t1(print_numbers);
+    t1.join();
+    return 0;
+}</code></pre>
+
+            <h2 id="lambda">Lambda 表达式</h2>
+            <p>Lambda 表达式用于定义匿名函数。</p>
+            <pre><code>int main() {
+    auto add = [](int a, int b) {
+        return a + b;
+    };
+    std::cout << add(3, 4) << std::endl;
+    return 0;
+}</code></pre>
+
+            <h2 id="smart-pointers">智能指针</h2>
+            <p>智能指针用于自动管理内存。</p>
+            <pre><code>#include &lt;memory&gt;
+
+int main() {
+    std::unique_ptr&lt;int&gt; ptr(new int(10));
+    std::cout << "Value: " << *ptr << std::endl;
+    return 0;
+}</code></pre>
+
+            <h2 id="move-semantics">移动语义</h2>
+            <p>移动语义用于高效地转移资源。</p>
+            <pre><code>#include &lt;vector&gt;
+
+int main() {
+    std::vector&lt;int&gt; vec1 = {1, 2, 3, 4, 5};
+    std::vector&lt;int&gt; vec2 = std::move(vec1);
+    for (int val : vec2) {
+        std::cout << val << " ";
+    }
+    return 0;
+}</code></pre>
+        </div>
+    </div>
+
+</body>
+
+</html>

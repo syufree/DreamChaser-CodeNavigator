@@ -1,0 +1,220 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>我的学习页面</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #2f3540;
+            color: #cecccc;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header img {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            height: 50px;
+        }
+
+        nav {
+            background-color: #2f3540;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .column {
+            flex: 1;
+            padding: 0 20px;
+        }
+
+        .column:not(:last-child) {
+            border-right: 1px solid #ccc;
+        }
+
+        .profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #2f3540;
+            color: #dedddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        h1{
+            color:#cecccc
+
+        }
+        h2 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+            padding: 5px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+
+        li:hover {
+            background-color: #f4f4f4;
+        }
+
+        .learned,
+        .not-learned {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .learned span,
+        .not-learned span {
+            margin-left: 10px;
+            font-size: 0.8em;
+            color: #888;
+            display: none;
+        }
+
+        .learned {
+            color: #4CAF50;
+        }
+
+        .not-learned {
+            color: #F44336;
+        }
+
+        .details {
+            font-size: 0.8em;
+            color: #555;
+            padding: 5px;
+            border-left: 3px solid #ccc;
+            margin-top: 5px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="{% static 'img/logo.jpg' %}" alt="Code Navigator Logo">
+        <h1>Code Navigator</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/myapp/login/">首页</a></li>
+            <li><a href="/myapp/index/">语言乐园</a></li>
+            <li><a href="/myapp/end/">结束</a></li>
+            <li><a href="/myapp/myself/">我的</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="column">
+            <h2>推荐课程</h2>
+            <ul>
+                <li>入门 Python</li>
+                <li>JavaScript 基础</li>
+                <li>入门 C++</li>
+                <li>
+            </ul>
+        </div>
+        <div class="column">
+            <h2>已学习的语言</h2>
+            <ul>
+                <li class="learned" onclick="toggleDetails(this)">
+                    Python - 中级
+                    <span>点击查看详情</span>
+                    <div class="details">升级到高级推荐学习数据分析和机器学习。</div>
+                </li>
+                <li class="learned" onclick="toggleDetails(this)">
+                    JavaScript - 初级
+                    <span>点击查看详情</span>
+                    <div class="details">升级到中级推荐学习ES6语法和异步编程。</div>
+                </li>
+            </ul>
+            <h2>未学习的语言</h2>
+            <ul>
+                <li class="not-learned">Java</li>
+                <li class="not-learned">C++</li>
+                <li class="not-learned">CSS</li>
+            </ul>
+        </div>
+        <div class="column profile">
+            <img src="{% static 'img/profile.png' %}" alt="Profile Picture">
+            <h2>用户信息</h2>
+            <p>姓名：张三</p>
+            <p>学习目标：全栈开发</p>
+        </div>
+    </div>
+    <footer>
+        <p>CodeNavigator旅程现在结束</p>
+        <p>版权所有 &copy; 2024 DreamChaser</p>
+    </footer>
+    <script>
+        function toggleDetails(element) {
+            var details = element.querySelector('.details');
+            var span = element.querySelector('span');
+            if (details.style.display === 'block') {
+                details.style.display = 'none';
+                span.textContent = '点击查看详情';
+            } else {
+                details.style.display = 'block';
+                span.textContent = '点击隐藏详情';
+            }
+        }
+    </script>
+</body>
+</html>

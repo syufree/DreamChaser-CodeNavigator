@@ -1,0 +1,720 @@
+{%load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Tutorial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #bdbcbc;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        li {
+            display: inline;
+
+        }
+
+        .tutorial-container {
+            background-color: rgb(245, 246, 247);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 1400px;
+            width: 100%;
+            align-items: center;
+        }
+
+        h1 {
+            background-color: #8e9fbe;
+            padding: 20px;
+            color: #191515;
+            text-align: center;
+            width: 100%;
+        }
+
+        h2,
+        h3 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        pre {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .example-image {
+            display: block;
+            margin: 10px 0;
+            max-width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #414e86;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #45a049;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #414e86;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #45a049;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #414e86;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #45a049;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #414e86;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #45a049;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #414e86;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #45a049;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #414e86;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #45a049;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #414e86;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #45a049;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #414e86;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #45a049;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #414e86;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #45a049;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #414e86;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #45a049;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #414e86;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #45a049;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #414e86;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #45a049;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #414e86;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        button {
+            background-color: #414e86;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 0;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .content-left,
+        .content-right {
+            flex: 1;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .content-left {
+            border-right: 1px solid #ddd;
+        }
+
+        .answer {
+            display: none;
+            background-color: #e7f4e4;
+            border-left: 5px solid #4CAF50;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .options {
+            margin-bottom: 10px;
+        }
+
+        .feedback {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .correct {
+            background-color: #d4edda;
+            border-left: 5px solid #28a745;
+        }
+
+        .incorrect {
+            background-color: #f8d7da;
+            border-left: 5px solid #dc3545;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tutorial-container">
+        <h1>Python 基础教程</h1>
+
+        <div class="container">
+            <div class="content-left">
+                <h2>Python 简介</h2>
+                <p>Python 是一种解释型、高级编程语言，因其简洁、易读、功能强大而广受欢迎。它被广泛应用于 Web 开发、数据分析、人工智能、科学计算等领域。</p>
+                <pre><code>print("Hello, World!")</code></pre>
+                <img src="{% static 'img/python_hello_world_output.png' %}" alt="Python Hello World Output"
+                    class="example-image">
+
+
+                <h2>变量</h2>
+                <p>在 Python 中，变量用于存储数据值。使用赋值运算符 <code>=</code> 进行赋值。</p>
+                <pre><code>my_variable = 10
+print(my_variable)</code></pre>
+                <img src="{% static 'img/python_variable_output.png' %}" alt="Python Variable Output"
+                    class="example-image">
+
+                <h2>函数</h2>
+                <p>函数是执行特定任务的一段代码。可以使用 <code>def</code> 关键字定义函数。</p>
+                <pre><code>def greet(name):
+    return f"Hello, {name}!"
+
+print(greet("Alice"))</code></pre>
+                <img src="{% static 'img/python_function_output.png' %}" alt="Python Function Output"
+                    class="example-image">
+
+                <h2>条件语句</h2>
+                <p>条件语句根据条件的真假执行不同的代码块。</p>
+                <pre><code>if x > 0:
+    print("x is positive")
+elif x == 0:
+    print("x is zero")
+else:
+    print("x is negative")</code></pre>
+
+                <h2>循环</h2>
+                <p>循环用于重复执行某段代码。</p>
+                <pre><code>for i in range(5):
+    print(i)</code></pre>
+
+                <h2>列表</h2>
+                <p>列表是一个有序的集合，可以存储多个值。</p>
+                <pre><code>fruits = ["apple", "banana", "cherry"]
+print(fruits[1])</code></pre>
+
+                <h2>集合</h2>
+                <p>集合是一个无序的、不重复的元素集合。使用花括号 <code>{}</code> 定义集合。</p>
+                <pre><code>fruits = {"apple", "banana", "cherry"}
+print(fruits)</code></pre>
+                <img src="{%static 'img/python_set_output.png'%}" alt="Python Set Output" class="example-image">
+
+                <h2>元组</h2>
+                <p>元组是一个有序的、不可修改的集合。使用圆括号 <code>()</code> 定义元组。</p>
+                <pre><code>fruits = ("apple", "banana", "cherry")
+print(fruits[1])</code></pre>
+                <img src="{%static 'img/python_tuple_output.png'%}" alt="Python Tuple Output" class="example-image">
+
+                <h2>异常处理</h2>
+                <p>异常处理用于捕获和处理程序运行时的错误，避免程序崩溃。使用 <code>try</code>、<code>except</code> 块来捕获和处理异常。</p>
+                <pre><code>try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("Cannot divide by zero")</code></pre>
+                <img src="{%static 'img/python_exception_output.png'%}" alt="Python Exception Output"
+                    class="example-image">
+
+                <h2>类和对象</h2>
+                <p>类是面向对象编程的基础。类可以创建对象，包含数据（属性）和行为（方法）。使用 <code>class</code> 关键字定义类。</p>
+                <pre><code>class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def greet(self):
+        return f"Hello, my name is {self.name}"
+
+person = Person("Alice", 25)
+print(person.greet())</code></pre>
+                <img src="{%static 'img/python_class_output.png'%}" alt="Python Class Output" class="example-image">
+
+                <h2>文件操作</h2>
+                <p>Python 提供了多种方式来读取和写入文件。使用 <code>open()</code> 函数打开文件，然后使用 <code>read()</code> 或 <code>write()</code>
+                    方法进行操作。</p>
+                <pre><code>with open("example.txt", "w") as file:
+    file.write("Hello, World!")
+
+with open("example.txt", "r") as file:
+    content = file.read()
+    print(content)</code></pre>
+                <img src="{%static 'img/python_file_output.png'%}" alt="Python File Output" class="example-image">
+
+                <h2>列表推导式</h2>
+                <p>列表推导式是生成列表的简洁方式。使用方括号 <code>[]</code> 包含表达式和循环生成元素。</p>
+                <pre><code>squares = [x**2 for x in range(10)]
+print(squares)</code></pre>
+                <img src="{%static 'img/python_list_comprehension_output.png'%}" alt="Python List Comprehension Output"
+                    class="example-image">
+
+                <h2>生成器</h2>
+                <p>生成器用于生成一系列值，每次请求返回一个值，使用 <code>yield</code> 关键字定义生成器。</p>
+                <pre><code>def generate_numbers():
+    for i in range(5):
+        yield i
+
+for number in generate_numbers():
+    print(number)</code></pre>
+                <img src="{%static 'img/python_generator_output.png'%}" alt="Python Generator Output"
+                    class="example-image">
+
+
+            </div>
+
+            <div class="content-right">
+                <h2>选择题测试以及部分练习</h2>
+                <p>请选择正确的答案。</p>
+
+                <h3>问题 1：Python 用于打印输出的函数是？</h3>
+                <div class="options">
+                    <input type="radio" id="q1a" name="q1" value="a">
+                    <label for="q1a">echo()</label><br>
+                    <input type="radio" id="q1b" name="q1" value="b">
+                    <label for="q1b">print()</label><br>
+                    <input type="radio" id="q1c" name="q1" value="c">
+                    <label for="q1c">printf()</label><br>
+                    <input type="radio" id="q1d" name="q1" value="d">
+                    <label for="q1d">log()</label>
+                </div>
+                <button onclick="checkQuizAnswer('q1', 'b', 'feedback1')">提交答案</button>
+                <div id="feedback1" class="feedback"></div>
+
+                <h3>问题 2：Python 中用于定义函数的关键字是？</h3>
+                <div class="options">
+                    <input type="radio" id="q2a" name="q2" value="a">
+                    <label for="q2a">func</label><br>
+                    <input type="radio" id="q2b" name="q2" value="b">
+                    <label for="q2b">function</label><br>
+                    <input type="radio" id="q2c" name="q2" value="c">
+                    <label for="q2c">define</label><br>
+                    <input type="radio" id="q2d" name="q2" value="d">
+                    <label for="q2d">def</label>
+                </div>
+                <button onclick="checkQuizAnswer('q2', 'd', 'feedback2')">提交答案</button>
+                <div id="feedback2" class="feedback"></div>
+
+                <h3>问题 3：Python 中用于导入模块的关键字是？</h3>
+                <div class="options">
+                    <input type="radio" id="q3a" name="q3" value="a">
+                    <label for="q3a">include</label><br>
+                    <input type="radio" id="q3b" name="q3" value="b">
+                    <label for="q3b">require</label><br>
+                    <input type="radio" id="q3c" name="q3" value="c">
+                    <label for="q3c">import</label><br>
+                    <input type="radio" id="q3d" name="q3" value="d">
+                    <label for="q3d">use</label>
+                </div>
+                <button onclick="checkQuizAnswer('q3', 'c', 'feedback3')">提交答案</button>
+                <div id="feedback3" class="feedback"></div>
+
+                <h3>问题 4：下列哪一个是 Python 的注释符号？</h3>
+                <div class="options">
+                    <input type="radio" id="q4a" name="q4" value="a">
+                    <label for="q4a">//</label><br>
+                    <input type="radio" id="q4b" name="q4" value="b">
+                    <label for="q4b">#</label><br>
+                    <input type="radio" id="q4c" name="q4" value="c">
+                    <label for="q4c">/* */</label><br>
+                    <input type="radio" id="q4d" name="q4" value="d">
+                    <label for="q4d"><!-- --></label>
+                </div>
+                <button onclick="checkQuizAnswer('q4', 'b', 'feedback4')">提交答案</button>
+                <div id="feedback4" class="feedback"></div>
+
+                <h3>问题 5：Python 中用于循环的关键字是？</h3>
+                <div class="options">
+                    <input type="radio" id="q5a" name="q5" value="a">
+                    <label for="q5a">repeat</label><br>
+                    <input type="radio" id="q5b" name="q5" value="b">
+                    <label for="q5b">while</label><br>
+                    <input type="radio" id="q5c" name="q5" value="c">
+                    <label for="q5c">loop</label><br>
+                    <input type="radio" id="q5d" name="q5" value="d">
+                    <label for="q5d">for</label>
+                </div>
+                <button onclick="checkQuizAnswer('q5', 'd', 'feedback5')">提交答案</button>
+                <div id="feedback5" class="feedback"></div>
+
+                <h3>问题 6：在 Python 中，什么类型的数据结构是不可变的？</h3>
+                <div class="options">
+                    <input type="radio" id="q6a" name="q6" value="a">
+                    <label for="q6a">list</label><br>
+                    <input type="radio" id="q6b" name="q6" value="b">
+                    <label for="q6b">tuple</label><br>
+                    <input type="radio" id="q6c" name="q6" value="c">
+                    <label for="q6c">dictionary</label><br>
+                    <input type="radio" id="q6d" name="q6" value="d">
+                    <label for="q6d">set</label>
+                </div>
+                <button onclick="checkQuizAnswer('q6', 'b', 'feedback6')">提交答案</button>
+                <div id="feedback6" class="feedback"></div>
+
+                <h3>问题 7：下列哪个函数用于获取用户输入？</h3>
+                <div class="options">
+                    <input type="radio" id="q7a" name="q7" value="a">
+                    <label for="q7a">get()</label><br>
+                    <input type="radio" id="q7b" name="q7" value="b">
+                    <label for="q7b">read()</label><br>
+                    <input type="radio" id="q7c" name="q7" value="c">
+                    <label for="q7c">input()</label><br>
+                    <input type="radio" id="q7d" name="q7" value="d">
+                    <label for="q7d">scan()</label>
+                </div>
+                <button onclick="checkQuizAnswer('q7', 'c', 'feedback7')">提交答案</button>
+                <div id="feedback7" class="feedback"></div>
+
+                <h3>问题 8：Python 中用于计算长度的函数是？</h3>
+                <div class="options">
+                    <input type="radio" id="q8a" name="q8" value="a">
+                    <label for="q8a">length()</label><br>
+                    <input type="radio" id="q8b" name="q8" value="b">
+                    <label for="q8b">size()</label><br>
+                    <input type="radio" id="q8c" name="q8" value="c">
+                    <label for="q8c">len()</label><br>
+                    <input type="radio" id="q8d" name="q8" value="d">
+                    <label for="q8d">count()</label>
+                </div>
+                <button onclick="checkQuizAnswer('q8', 'c', 'feedback8')">提交答案</button>
+                <div id="feedback8" class="feedback"></div>
+
+                <h3>问题 9：Python 中表示布尔值“真”的关键字是？</h3>
+                <div class="options">
+                    <input type="radio" id="q9a" name="q9" value="a">
+                    <label for="q9a">TRUE</label><br>
+                    <input type="radio" id="q9b" name="q9" value="b">
+                    <label for="q9b">True</label><br>
+                    <input type="radio" id="q9c" name="q9" value="c">
+                    <label for="q9c">true</label><br>
+                    <input type="radio" id="q9d" name="q9" value="d">
+                    <label for="q9d">T</label>
+                </div>
+                <button onclick="checkQuizAnswer('q9', 'b', 'feedback9')">提交答案</button>
+                <div id="feedback9" class="feedback"></div>
+
+                <h3>问题 10：Python 中用于定义类的关键字是？</h3>
+                <div class="options">
+                    <input type="radio" id="q10a" name="q10" value="a">
+                    <label for="q10a">class</label><br>
+                    <input type="radio" id="q10b" name="q10" value="b">
+                    <label for="q10b">struct</label><br>
+                    <input type="radio" id="q10c" name="q10" value="c">
+                    <label for="q10c">object</label><br>
+                    <input type="radio" id="q10d" name="q10" value="d">
+                    <label for="q10d">define</label>
+                </div>
+                <button onclick="checkQuizAnswer('q10', 'a', 'feedback10')">提交答案</button>
+                <div id="feedback10" class="feedback"></div>
+
+                <h3>练习</h3>
+                <p>定义一个函数 <code>add_numbers</code>，接受两个参数并返回它们的和。然后调用该函数并打印结果。</p>
+                <pre><code>#your code</code></pre>
+                <textarea id="exercise2" rows="4" cols="50"></textarea><br>
+                <button
+                    onclick="checkAnswer('exercise2', 'answer2', `def add_numbers(a, b):\n    return a + b\n\nprint(add_numbers(5, 3))`)">提交答案</button>
+                <p id="answer2" class="answer"></p>
+                <button onclick="showAnswer('answer2')">显示答案</button>
+                <p id="answer2" class="answer">def add_numbers(a, b):<br>return a + b<br>print(add_numbers(5, 3))</p>
+
+                <h3>练习</h3>
+                <p>编写条件语句判断一个数是奇数还是偶数。</p>
+                <pre><code>num = 4
+                # Your code here</code></pre>
+                <button onclick="showAnswer('answer3')">显示答案</button>
+                <p id="answer3" class="answer">num = 4<br>if num % 2 ==
+                    0:<br>&nbsp;&nbsp;&nbsp;&nbsp;print("Even")<br>else:<br>&nbsp;&nbsp;&nbsp;&nbsp;print("Odd")</p>
+
+
+            </div>
+        </div>
+        <div class="buttons">
+            <a href="/myapp/index">继续学习</a>
+            <a href="/myapp/myself">结束学习</a>
+        </div>
+
+
+    </div>
+
+    <script>
+        function checkAnswer(exerciseId, answerId, correctAnswer) {
+            const userAnswer = document.getElementById(exerciseId).value.trim();
+            const answerElement = document.getElementById(answerId);
+
+            if (userAnswer === correctAnswer) {
+                answerElement.innerHTML = "答案正确！";
+                answerElement.style.display = "block";
+                answerElement.style.backgroundColor = "#d4edda";
+                answerElement.style.borderLeft = "5px solid #28a745";
+            } else {
+                answerElement.innerHTML = "答案错误，请重试。";
+                answerElement.style.display = "block";
+                answerElement.style.backgroundColor = "#f8d7da";
+                answerElement.style.borderLeft = "5px solid #dc3545";
+            }
+        }
+
+        function showAnswer(answerId) {
+            const answerElement = document.getElementById(answerId);
+            answerElement.style.display = "block";
+        }
+
+        function checkQuizAnswer(questionName, correctAnswer, feedbackId) {
+            const selectedOption = document.querySelector(`input[name="${questionName}"]:checked`);
+            const feedbackElement = document.getElementById(feedbackId);
+
+            if (selectedOption) {
+                if (selectedOption.value === correctAnswer) {
+                    feedbackElement.innerHTML = "正确答案！进入下一题...";
+                    feedbackElement.className = "feedback correct";
+                } else {
+                    feedbackElement.innerHTML = "选择错误，请重试。";
+                    feedbackElement.className = "feedback incorrect";
+                }
+            } else {
+                feedbackElement.innerHTML = "请选择一个答案。";
+                feedbackElement.className = "feedback incorrect";
+            }
+        }
+    </script>
+</body>
+
+</html>

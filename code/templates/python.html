@@ -1,0 +1,350 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Learning Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            margin: 20px;
+            height: 750px; /* 设置容器的高度 */
+        }
+
+        .knowledge-panel {
+            flex: 1;
+            background-color: #fff;
+            padding: 20px;
+            margin-right: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-height: 700px; /* 限制左侧面板的高度 */
+            overflow-y: auto; /* 使内容可滚动 */
+        }
+
+        .info-panel {
+            flex: 1.5; /* 调整右侧面板的占比 */
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-height: 700px; /* 限制右侧面板的高度 */
+            overflow-y: auto; /* 使内容可滚动 */
+        }
+
+        .knowledge-panel h2,
+        .info-panel h2 {
+            color: #333;
+        }
+
+        .knowledge-panel ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .knowledge-panel li {
+            background: #e2e2e2;
+            margin: 5px 0; /* 调整上下间距 */
+            padding: 5px; /* 调整内边距 */
+            border-radius: 3px;
+            font-size: 14px; /* 调整字体大小 */
+        }
+
+        .knowledge-panel li a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+
+        .info-panel img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加阴影 */
+            border: 2px solid #ddd; /* 添加边框 */
+            padding: 5px; /* 边框内边距 */
+        }
+
+        .logo {
+            margin-left: 10px;
+            margin-top: 10px;
+            width: 50px;
+            height: 50px;
+            float: left;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="{% static 'img/logo.jpg' %}" class="logo">
+    <h1>PythonNavigator</h1>
+    <h3>学习Python 在这里你可以找到关于Python的基础知识和高级技巧</h3>
+
+    <div class="navbar">
+        <a href="/myapp/pythons">实践测试</a>
+        <a href="/myapp/index">返回上一页</a>
+    </div>
+
+    <div class="container">
+        <div class="knowledge-panel">
+            <h2>Python 知识</h2>
+            <ul>
+                <li><a href="#python-intro">Python 介绍</a></li>
+                <li><a href="#variables">变量和数据类型</a></li>
+                <li><a href="#control-structures">控制结构</a></li>
+                <li><a href="#functions-modules">函数和模块</a></li>
+                <li><a href="#file-handling">文件处理</a></li>
+                <li><a href="#exception-handling">异常处理</a></li>
+                <li><a href="#oop">面向对象编程</a></li>
+                <li><a href="#decorators">装饰器</a></li>
+                <li><a href="#generators">生成器</a></li>
+                <li><a href="#iterators">迭代器</a></li>
+                <li><a href="#libraries">标准库和第三方库</a></li>
+                <li><a href="#regex">正则表达式</a></li>
+                <li><a href="#list-comprehensions">列表生成式</a></li>
+                <li><a href="#context-managers">上下文管理器</a></li>
+                <li><a href="#multithreading">多线程和多进程</a></li>
+                <li><a href="#networking">网络编程</a></li>
+                <li><a href="#database">数据库操作</a></li>
+                <li><a href="#unit-testing">单元测试</a></li>
+                <li><a href="#data-visualization">数据可视化</a></li>
+                <li><a href="#virtual-env">虚拟环境和包管理</a></li>
+            </ul>
+        </div>
+
+        <div class="info-panel">
+            <h2 id="python-intro">Python 介绍</h2>
+            <p>Python 是一种以其简单性和可读性著称的流行编程语言。它广泛应用于Web开发、数据分析、人工智能、科学计算等领域。</p>
+            <img src="https://www.python.org/static/community_logos/python-logo-master-v3-TM.png" alt="Python Logo">
+
+            <h2 id="variables">变量和数据类型</h2>
+            <p>在Python中，变量不需要声明类型，可以直接赋值。常见的数据类型有整数、浮点数、字符串和布尔值。</p>
+            <pre><code>age = 25
+name = "Alice"
+height = 5.7
+is_student = True</code></pre>
+
+            <h2 id="control-structures">控制结构</h2>
+            <p>Python 支持常见的控制结构，如 if-else 语句、for 循环和 while 循环。</p>
+            <pre><code>if age > 18:
+    print("Adult")
+else:
+    print("Minor")
+
+for i in range(5):
+    print(i)
+
+while age < 30:
+    age += 1</code></pre>
+
+            <h2 id="functions-modules">函数和模块</h2>
+            <p>函数用于组织代码，提高代码复用性。模块是包含函数和变量的文件，可以导入到其他文件中使用。</p>
+            <pre><code>def greet(name):
+    return f"Hello, {name}"
+
+import math
+print(math.sqrt(16))</code></pre>
+
+            <h2 id="file-handling">文件处理</h2>
+            <p>Python 提供了简单的文件读写操作，可以用 open() 函数打开文件，用 read() 或 write() 函数进行读写。</p>
+            <pre><code>with open('file.txt', 'r') as file:
+    content = file.read()
+
+with open('file.txt', 'w') as file:
+    file.write("Hello, World!")</code></pre>
+
+            <h2 id="exception-handling">异常处理</h2>
+            <p>异常处理用于捕获和处理运行时错误，避免程序崩溃。常用的语句有 try、except 和 finally。</p>
+            <pre><code>try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+finally:
+    print("Execution complete")</code></pre>
+
+            <h2 id="oop">面向对象编程</h2>
+            <p>Python 支持面向对象编程，可以定义类和创建对象。</p>
+            <pre><code>class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def greet(self):
+        return f"Hello, my name is {self.name}"
+
+person = Person("Alice", 30)
+print(person.greet())</code></pre>
+
+            <h2 id="decorators">装饰器</h2>
+            <p>装饰器用于在不修改原函数的情况下扩展函数的功能。</p>
+            <pre><code>def my_decorator(func):
+    def wrapper():
+        print("Something is happening before the function is called.")
+        func()
+        print("Something is happening after the function is called.")
+    return wrapper
+
+@my_decorator
+def say_hello():
+    print("Hello!")
+
+say_hello()</code></pre>
+
+            <h2 id="generators">生成器</h2>
+            <p>生成器用于生成一个值序列，每次调用时生成一个值。使用 yield 关键字。</p>
+            <pre><code>def count_up_to(max):
+    count = 1
+    while count <= max:
+        yield count
+        count += 1
+
+counter = count_up_to(5)
+print(next(counter))
+print(next(counter))</code></pre>
+
+            <h2 id="iterators">迭代器</h2>
+            <p>迭代器是实现了迭代协议的对象，可以使用 iter() 和 next() 函数遍历。</p>
+            <pre><code>my_list = [1, 2, 3]
+iterator = iter(my_list)
+print(next(iterator))
+print(next(iterator))</code></pre>
+
+            <h2 id="libraries">标准库和第三方库</h2>
+            <p>Python 提供了丰富的标准库和第三方库，可以用来简化各种任务。</p>
+            <pre><code>import os
+print(os.getcwd())
+
+import requests
+response = requests.get('https://api.github.com')
+print(response.status_code)</code></pre>
+
+            <h2 id="regex">正则表达式</h2>
+            <p>正则表达式用于匹配字符串中的特定模式。</p>
+            <pre><code>import re
+pattern = r'\d+'
+text = 'My phone number is 123-456-7890'
+matches = re.findall(pattern, text)
+print(matches)</code></pre>
+
+            <h2 id="list-comprehensions">列表生成式</h2>
+            <p>列表生成式是一种简洁的创建列表的方式。</p>
+            <pre><code>squares = [x**2 for x in range(10)]
+print(squares)</code></pre>
+
+            <h2 id="context-managers">上下文管理器</h2>
+            <p>上下文管理器用于管理资源，如文件、网络连接等。</p>
+            <pre><code>with open('file.txt', 'r') as file:
+    content = file.read()
+print(content)</code></pre>
+
+            <h2 id="multithreading">多线程和多进程</h2>
+            <p>Python 支持多线程和多进程编程，可以并发执行多个任务。</p>
+            <pre><code>import threading
+
+def print_numbers():
+    for i in range(10):
+        print(i)
+
+thread = threading.Thread(target=print_numbers)
+thread.start()
+thread.join()</code></pre>
+
+            <h2 id="networking">网络编程</h2>
+            <p>Python 提供了多种库用于网络编程，如 socket 和 requests。</p>
+            <pre><code>import socket
+
+def get_ip():
+    hostname = socket.gethostname()
+    return socket.gethostbyname(hostname)
+
+print(get_ip())</code></pre>
+
+            <h2 id="database">数据库操作</h2>
+            <p>Python 可以使用 sqlite3 库操作SQLite数据库。</p>
+            <pre><code>import sqlite3
+
+conn = sqlite3.connect('example.db')
+c = conn.cursor()
+c.execute('''CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY, name TEXT)''')
+c.execute('''INSERT INTO users (name) VALUES ('Alice')''')
+conn.commit()
+conn.close()</code></pre>
+
+            <h2 id="unit-testing">单元测试</h2>
+            <p>单元测试用于测试代码的各个部分是否按预期工作。</p>
+            <pre><code>import unittest
+
+def add(a, b):
+    return a + b
+
+class TestMath(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add(1, 2), 3)
+
+if __name__ == '__main__':
+    unittest.main()</code></pre>
+
+            <h2 id="data-visualization">数据可视化</h2>
+            <p>Python 提供了多种库用于数据可视化，如 matplotlib 和 seaborn。</p>
+            <pre><code>import matplotlib.pyplot as plt
+
+x = [1, 2, 3, 4]
+y = [10, 20, 25, 30]
+
+plt.plot(x, y)
+plt.xlabel('X axis')
+plt.ylabel('Y axis')
+plt.title('Simple Plot')
+plt.show()</code></pre>
+            <img src="https://matplotlib.org/stable/_images/sphx_glr_plot_001.png" alt="Matplotlib Plot">
+
+            <h2 id="virtual-env">虚拟环境和包管理</h2>
+            <p>虚拟环境用于隔离项目的依赖，pip 是Python的包管理工具。</p>
+            <pre><code># 创建虚拟环境
+python -m venv myenv
+
+# 激活虚拟环境 (Windows)
+myenv\Scripts\activate
+
+# 激活虚拟环境 (Linux/Mac)
+source myenv/bin/activate
+
+# 安装包
+pip install requests
+
+# 列出已安装包
+pip freeze</code></pre>
+        </div>
+    </div>
+
+</body>
+</html>

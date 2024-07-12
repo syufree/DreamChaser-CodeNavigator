@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #bdbcbc;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .tutorial-container {
+            background-color: rgb(245, 246, 247);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 1400px;
+            width: 100%;
+            align-items: center;
+        }
+
+        h1 {
+            background-color: #8e9fbe;
+            padding: 20px;
+            color: #191515;
+            text-align: center;
+            width: 100%;
+        }
+
+        h2,
+        h3 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        pre {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .example-image {
+            display: block;
+            margin: 10px 0;
+            max-width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #414e86;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 0;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .content-left,
+        .content-right {
+            flex: 1;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .content-left {
+            border-right: 1px solid #ddd;
+        }
+
+        .answer {
+            display: none;
+            background-color: #e7f4e4;
+            border-left: 5px solid #4CAF50;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #414e86;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #45a049;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .options {
+            margin-bottom: 10px;
+        }
+
+        .feedback {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .correct {
+            background-color: #d4edda;
+            border-left: 5px solid #28a745;
+        }
+
+        .incorrect {
+            background-color: #f8d7da;
+            border-left: 5px solid #dc3545;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tutorial-container">
+        <h1>CSS 基础教程</h1>
+
+        <div class="container">
+            <div class="content-left">
+                <h2>CSS 简介</h2>
+                <p>CSS（Cascading Style Sheets）是一种样式表语言，用于描述 HTML 或 XML 文档的呈现方式。</p>
+                <pre><code>body {
+    background-color: lightblue;
+}</code></pre>
+
+
+                <h2>选择器</h2>
+                <p>选择器用于选取你想要设置样式的 HTML 元素。</p>
+                <pre><code>p {
+    color: blue;
+}</code></pre>
+
+                <h2>脚注</h2>
+                <p>脚注用于选取你想要设置样式的 HTML 元素。</p>
+                <pre><code>
+footer{color：red；}</code></pre>
+
+
+                <h2>盒子模型</h2>
+                <p>CSS 盒子模型描述了元素的内容、内边距、边框和外边距。</p>
+                <pre><code>div {
+    width: 100px;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 10px;
+}</code></pre>
+
+
+                <h2>Flexbox</h2>
+                <p>Flexbox 是一种布局模式，用于一维布局。</p>
+                <pre><code>.container {
+    display: flex;
+    justify-content: space-between;
+}</code></pre>
+
+            </div>
+
+            <div class="content-right">
+                <h2>选择题测试以及部分练习</h2>
+                <p>请选择正确的答案。</p>
+
+                <h3>问题 1：CSS 用于设置背景颜色的属性是？</h3>
+                <div class="options">
+                    <input type="radio" id="q1a" name="q1" value="a">
+                    <label for="q1a">background-color</label><br>
+                    <input type="radio" id="q1b" name="q1" value="b">
+                    <label for="q1b">bg-color</label><br>
+                    <input type="radio" id="q1c" name="q1" value="c">
+                    <label for="q1c">color</label><br>
+                    <input type="radio" id="q1d" name="q1" value="d">
+                    <label for="q1d">background</label>
+                </div>
+                <button onclick="checkQuizAnswer('q1', 'a', 'feedback1')">提交答案</button>
+                <div id="feedback1" class="feedback"></div>
+
+                <h3>问题 2：CSS 选择器用于选取所有段落元素的语法是？</h3>
+                <div class="options">
+                    <input type="radio" id="q2a" name="q2" value="a">
+                    <label for="q2a">#p</label><br>
+                    <input type="radio" id="q2b" name="q2" value="b">
+                    <label for="q2b">.p</label><br>
+                    <input type="radio" id="q2c" name="q2" value="c">
+                    <label for="q2c">p</label><br>
+                    <input type="radio" id="q2d" name="q2" value="d">
+                    <label for="q2d">*p</label>
+                </div>
+                <button onclick="checkQuizAnswer('q2', 'c', 'feedback2')">提交答案</button>
+                <div id="feedback2" class="feedback"></div>
+
+                <h3>问题 3：CSS 中用于设置文本颜色的属性是？</h3>
+                <div class="options">
+                    <input type="radio" id="q3a" name="q3" value="a">
+                    <label for="q3a">font-color</label><br>
+                    <input type="radio" id="q3b" name="q3" value="b">
+                    <label for="q3b">text-color</label><br>
+                    <input type="radio" id="q3c" name="q3" value="c">
+                    <label for="q3c">color</label><br>
+                    <input type="radio" id="q3d" name="q3" value="d">
+                    <label for="q3d">foreground-color</label>
+                </div>
+                <button onclick="checkQuizAnswer('q3', 'c', 'feedback3')">提交答案</button>
+                <div id="feedback3" class="feedback"></div>
+
+                <h3>问题 4：CSS 中用于设置字体大小的属性是？</h3>
+                <div class="options">
+                    <input type="radio" id="q4a" name="q4" value="a">
+                    <label for="q4a">font-style</label><br>
+                    <input type="radio" id="q4b" name="q4" value="b">
+                    <label for="q4b">font-size</label><br>
+                    <input type="radio" id="q4c" name="q4" value="c">
+                    <label for="q4c">text-size</label><br>
+                    <input type="radio" id="q4d" name="q4" value="d">
+                    <label for="q4d">text-style</label>
+                </div>
+                <button onclick="checkQuizAnswer('q4', 'b', 'feedback4')">提交答案</button>
+                <div id="feedback4" class="feedback"></div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <a href="/myapp/index">继续学习</a>
+            <a href="/myapp/myself">结束学习</a>
+        </div>
+
+                                          
+
+    </div>
+
+
+
+
+
+
+
+    <script>
+        function checkQuizAnswer(questionName, correctAnswer, feedbackId) {
+            const selectedOption = document.querySelector(`input[name="${questionName}"]:checked`);
+            const feedbackElement = document.getElementById(feedbackId);
+
+            if (selectedOption) {
+                if (selectedOption.value === correctAnswer) {
+                    feedbackElement.innerHTML = "正确答案！进入下一题...";
+                    feedbackElement.className = "feedback correct";
+                } else {
+                    feedbackElement.innerHTML = "选择错误，请重试。";
+                    feedbackElement.className = "feedback incorrect";
+                }
+            } else {
+                feedbackElement.innerHTML = "请选择一个答案。";
+                feedbackElement.className = "feedback incorrect";
+            }
+        }
+    </script>
+</body>
+
+</html>

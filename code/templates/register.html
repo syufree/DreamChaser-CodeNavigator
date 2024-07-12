@@ -1,0 +1,243 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'plugins/bootstrap-3.4.1/css/bootstrap.min.css' %}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f7f4;
+        }
+
+        /*body {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            /*background-image: url('{% static 'image/1.png'%}')
+       }
+       */
+      
+              .account {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5px;
+
+            /*padding: 40px 60px;
+            width: 500px;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            box-shadow: 5px 5px 20px #aaa;
+
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            padding: 20px 40px;*/
+        }
+
+        p {
+            font-size: 18px;
+            color: #5b5656;
+            margin-bottom: 150px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #2f3540;
+            color: #dedddd;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .account h2 {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .dropdown-toggle {
+            padding: 50px;
+            position: relative;
+            right: 10px;
+        }
+
+        .aa {
+            position: fixed;
+            /* 或者 'absolute' */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            /* 确保图片在内容下方 */
+        }
+
+        .custom-input {
+            /* 设置你想要的颜色 */
+            background-color: #222121;
+            /* 其他样式 */
+        }
+
+        header {
+            background-color: #2f3540;
+            color: #443030;
+            padding: 40px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin: 50px;
+            background-color: #91a1a3;
+            color: white;
+            /* White text */
+            padding: 15px 30px;
+            /* Padding around the text */
+            cursor: pointer;
+            /* Pointer cursor on hover */
+            transition: background-color 0.3s;
+            /* Smooth transition for hover*/
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            font-size: 15px;
+            /* Larger font size */
+            font-family: 'Arial', sans-serif;
+            /* Change the font-family */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: #edecec;
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"] {
+            padding: 10px;
+            background-color: #2e8098;
+            color: #f3ecec;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #DDDDDD;
+        }
+
+        body {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            /*background-image: url('{% static 'image/1.png'%}');*/
+        }
+
+                                                                                
+        .account h2 {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .dropdown-toggle {
+            padding: 50px;
+            position: relative;
+            right: 10px;
+        }
+
+        .aa {
+            position: fixed;
+            /* 或者 'absolute' */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            /* 确保图片在内容下方 */
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <img src="{%static 'img/logo.jpg' %}" alt="Code Navigator Logo" style="height:20px;">
+        <h1>Code Navigator</h1>
+    </header>
+
+    <nav>
+        <ul class="center-buttons">
+            <li>
+                <a href="/myapp/login/">首页</a>
+            </li>
+            <li>
+                <a href="/myapp/index/">语言乐园</a>
+            </li>
+            <li>
+                <a href="/myapp/login/">结束</a>
+            </li>
+            <li>
+                <a href="/myapp/myself/">我的</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--<img src="{% static 'img/R.jpg' %}" alt="Background Image" class="aa">-->
+            <div class="account">
+        <h2>用户注册</h2>
+        <form method="post" novalidate>
+            {% csrf_token %}
+            <div class="form-group">
+                <label>用户名</label>
+                {{ form.username }}
+                <span style="color: red;">{{ form.username.errors.0 }}</span>
+            </div>
+            <div class="form-group">
+                <label>密码</label>
+                {{ form.password }}
+                <span style="color: red;">{{ form.password.errors.0 }}</span>
+            </div>
+            <div class="form-group">
+                <label>确认密码</label>
+                {{ form.confirm_password }}
+                <span style="color: red;">{{ form.confirm_password.errors.0 }}</span>
+            </div>
+            <p>已有帐号?<a href="/myapp/login/" style="color: lightseagreen">立即登录</a></p>
+            <input type="submit" value="注 册" class="btn btn-primary">
+        </form>
+    </div>
+
+    <footer>
+        <p>版权所有 &copy; 2024 DreamChaser</p>
+      </footer>
+
+      
+</body>

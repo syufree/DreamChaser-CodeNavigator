@@ -1,0 +1,247 @@
+Date : 2024-07-12 09:22:17
+Directory : d:\system
+Total : 183 files,  80805 codes, 1214 comments, 4414 blanks, all 86433 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| CSS        |         29 |     28,554 |        528 |      1,685 |     30,767 |
+| JSON       |          1 |     26,483 |          0 |          0 |     26,483 |
+| HTML       |         15 |     18,216 |         25 |      1,594 |     19,835 |
+| JavaScript |        110 |      4,751 |        603 |        959 |      6,313 |
+| XML        |          8 |      2,290 |          0 |          0 |      2,290 |
+| Python     |         20 |        511 |         58 |        176 |        745 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                       | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                          |        183 |     80,805 |      1,214 |      4,414 |     86,433 |
+| . (Files)                                                                                  |          1 |         16 |          1 |          5 |         22 |
+| .idea                                                                                      |          4 |         29 |          0 |          0 |         29 |
+| .idea (Files)                                                                              |          3 |         23 |          0 |          0 |         23 |
+| .idea\inspectionProfiles                                                                   |          1 |          6 |          0 |          0 |          6 |
+| myapp                                                                                      |         15 |        378 |         43 |        124 |        545 |
+| myapp (Files)                                                                              |          7 |        146 |         12 |         48 |        206 |
+| myapp\migrations                                                                           |          2 |         23 |          1 |          8 |         32 |
+| myapp\utils                                                                                |          6 |        209 |         30 |         68 |        307 |
+| static                                                                                     |        145 |     76,729 |      1,133 |      3,623 |     81,485 |
+| static\home                                                                                |         42 |     62,942 |        753 |      2,809 |     66,504 |
+| static\home\css                                                                            |         15 |     15,620 |        458 |      1,669 |     17,747 |
+| static\home\css (Files)                                                                    |          4 |      8,442 |        206 |        970 |      9,618 |
+| static\home\css\default-skin                                                               |          2 |        353 |         72 |         59 |        484 |
+| static\home\css\vendor                                                                     |          9 |      6,825 |        180 |        640 |      7,645 |
+| static\home\fonts                                                                          |          7 |     46,269 |          4 |        988 |     47,261 |
+| static\home\fonts\icomoon                                                                  |          1 |        986 |          0 |          0 |        986 |
+| static\home\fonts\icomoon demo                                                             |          6 |     45,283 |          4 |        988 |     46,275 |
+| static\home\fonts\icomoon demo (Files)                                                     |          3 |     44,112 |          4 |        983 |     45,099 |
+| static\home\fonts\icomoon demo\demo-files                                                  |          2 |        185 |          0 |          5 |        190 |
+| static\home\fonts\icomoon demo\fonts                                                       |          1 |        986 |          0 |          0 |        986 |
+| static\home\js                                                                             |         20 |      1,053 |        291 |        152 |      1,496 |
+| static\home\js (Files)                                                                     |          6 |        711 |        159 |        110 |        980 |
+| static\home\js\vendor                                                                      |         14 |        342 |        132 |         42 |        516 |
+| static\plugins                                                                             |        101 |     13,675 |        380 |        807 |     14,862 |
+| static\plugins\bootstrap-3.4.1                                                             |          8 |      9,462 |        241 |        618 |     10,321 |
+| static\plugins\bootstrap-3.4.1\css                                                         |          4 |      7,409 |         24 |          0 |      7,433 |
+| static\plugins\bootstrap-3.4.1\fonts                                                       |          1 |        288 |          0 |          0 |        288 |
+| static\plugins\bootstrap-3.4.1\js                                                          |          3 |      1,765 |        217 |        618 |      2,600 |
+| static\plugins\bootstrap-datepicker                                                        |         93 |      4,213 |        139 |        189 |      4,541 |
+| static\plugins\bootstrap-datepicker\css                                                    |          8 |      2,358 |         44 |          8 |      2,410 |
+| static\plugins\bootstrap-datepicker\js                                                     |          2 |      1,772 |         95 |        181 |      2,048 |
+| static\plugins\bootstrap-datepicker\locales                                                |         83 |         83 |          0 |          0 |         83 |
+| static\system                                                                              |          2 |        112 |          0 |          7 |        119 |
+| system                                                                                     |          4 |        117 |         14 |         47 |        178 |
+| templates                                                                                  |         14 |      3,536 |         23 |        615 |      4,174 |
++--------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                   | language   | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| d:\system\.idea\inspectionProfiles\profiles_settings.xml                                   | XML        |          6 |          0 |          0 |          6 |
+| d:\system\.idea\misc.xml                                                                   | XML        |          7 |          0 |          0 |          7 |
+| d:\system\.idea\modules.xml                                                                | XML        |          8 |          0 |          0 |          8 |
+| d:\system\.idea\system.iml                                                                 | XML        |          8 |          0 |          0 |          8 |
+| d:\system\manage.py                                                                        | Python     |         16 |          1 |          5 |         22 |
+| d:\system\myapp\__init__.py                                                                | Python     |          0 |          0 |          1 |          1 |
+| d:\system\myapp\admin.py                                                                   | Python     |          1 |          1 |          2 |          4 |
+| d:\system\myapp\apps.py                                                                    | Python     |          3 |          0 |          3 |          6 |
+| d:\system\myapp\migrations\0001_initial.py                                                 | Python     |         23 |          1 |          7 |         31 |
+| d:\system\myapp\migrations\__init__.py                                                     | Python     |          0 |          0 |          1 |          1 |
+| d:\system\myapp\models.py                                                                  | Python     |         12 |          1 |          2 |         15 |
+| d:\system\myapp\tests.py                                                                   | Python     |          1 |          1 |          2 |          4 |
+| d:\system\myapp\urls.py                                                                    | Python     |         19 |          1 |          2 |         22 |
+| d:\system\myapp\utils\__init__.py                                                          | Python     |          0 |          0 |          1 |          1 |
+| d:\system\myapp\utils\bootstrap.py                                                         | Python     |         17 |          2 |          7 |         26 |
+| d:\system\myapp\utils\code.py                                                              | Python     |         39 |          5 |         12 |         56 |
+| d:\system\myapp\utils\encrypt.py                                                           | Python     |          6 |          0 |          3 |          9 |
+| d:\system\myapp\utils\form.py                                                              | Python     |         42 |         10 |         15 |         67 |
+| d:\system\myapp\utils\pagination.py                                                        | Python     |        105 |         13 |         30 |        148 |
+| d:\system\myapp\views.py                                                                   | Python     |        110 |          8 |         36 |        154 |
+| d:\system\static\home\css\custom.css                                                       | CSS        |          0 |          1 |          0 |          1 |
+| d:\system\static\home\css\default-skin\default-skin.css                                    | CSS        |        352 |         72 |         59 |        483 |
+| d:\system\static\home\css\default-skin\default-skin.svg                                    | XML        |          1 |          0 |          0 |          1 |
+| d:\system\static\home\css\style.css                                                        | CSS        |      1,616 |         19 |        330 |      1,965 |
+| d:\system\static\home\css\style.min.css                                                    | CSS        |          1 |          6 |          0 |          7 |
+| d:\system\static\home\css\styles-merged.css                                                | CSS        |      6,825 |        180 |        640 |      7,645 |
+| d:\system\static\home\css\vendor\animate.css                                               | CSS        |      2,825 |         30 |        522 |      3,377 |
+| d:\system\static\home\css\vendor\bootstrap.min.css                                         | CSS        |          1 |          5 |          0 |          6 |
+| d:\system\static\home\css\vendor\default-skin.css                                          | CSS        |        352 |         72 |         59 |        483 |
+| d:\system\static\home\css\vendor\flexslider.css                                            | CSS        |        241 |         34 |          0 |        275 |
+| d:\system\static\home\css\vendor\icomoon.css                                               | CSS        |      2,949 |          2 |          4 |      2,955 |
+| d:\system\static\home\css\vendor\magnific-popup.css                                        | CSS        |        327 |          6 |         35 |        368 |
+| d:\system\static\home\css\vendor\owl.carousel.min.css                                      | CSS        |          1 |          0 |          0 |          1 |
+| d:\system\static\home\css\vendor\owl.theme.default.min.css                                 | CSS        |          1 |          0 |          0 |          1 |
+| d:\system\static\home\css\vendor\photoswipe.css                                            | CSS        |        128 |         31 |         20 |        179 |
+| d:\system\static\home\fonts\icomoon demo\demo-files\demo.css                               | CSS        |        157 |          0 |          2 |        159 |
+| d:\system\static\home\fonts\icomoon demo\demo-files\demo.js                                | JavaScript |         28 |          0 |          3 |         31 |
+| d:\system\static\home\fonts\icomoon demo\demo.html                                         | HTML       |     14,680 |          2 |        979 |     15,661 |
+| d:\system\static\home\fonts\icomoon demo\fonts\icomoon.svg                                 | XML        |        986 |          0 |          0 |        986 |
+| d:\system\static\home\fonts\icomoon demo\selection.json                                    | JSON       |     26,483 |          0 |          0 |     26,483 |
+| d:\system\static\home\fonts\icomoon demo\style.css                                         | CSS        |      2,949 |          2 |          4 |      2,955 |
+| d:\system\static\home\fonts\icomoon\icomoon.svg                                            | XML        |        986 |          0 |          0 |        986 |
+| d:\system\static\home\js\custom.js                                                         | JavaScript |          3 |          1 |          2 |          6 |
+| d:\system\static\home\js\google-map.js                                                     | JavaScript |         25 |         11 |         13 |         49 |
+| d:\system\static\home\js\main.js                                                           | JavaScript |        430 |         44 |         70 |        544 |
+| d:\system\static\home\js\main.min.js                                                       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\home\js\scripts.js                                                        | JavaScript |        251 |        103 |         25 |        379 |
+| d:\system\static\home\js\scripts.min.js                                                    | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\home\js\vendor\bootstrap.min.js                                           | JavaScript |          2 |          5 |          0 |          7 |
+| d:\system\static\home\js\vendor\circle-progress.min.js                                     | JavaScript |          1 |          9 |          0 |         10 |
+| d:\system\static\home\js\vendor\html5shiv.min.js                                           | JavaScript |          1 |          3 |          0 |          4 |
+| d:\system\static\home\js\vendor\jquery.appear.js                                           | JavaScript |         88 |         14 |         16 |        118 |
+| d:\system\static\home\js\vendor\jquery.appear.min.js                                       | JavaScript |          1 |         10 |          0 |         11 |
+| d:\system\static\home\js\vendor\jquery.countTo.js                                          | JavaScript |        106 |          3 |         21 |        130 |
+| d:\system\static\home\js\vendor\jquery.easing.1.3.js                                       | JavaScript |        132 |         70 |          3 |        205 |
+| d:\system\static\home\js\vendor\jquery.flexslider-min.js                                   | JavaScript |          1 |          4 |          0 |          5 |
+| d:\system\static\home\js\vendor\jquery.magnific-popup.min.js                               | JavaScript |          1 |          3 |          0 |          4 |
+| d:\system\static\home\js\vendor\jquery.min.js                                              | JavaScript |          4 |          1 |          1 |          6 |
+| d:\system\static\home\js\vendor\jquery.stellar.min.js                                      | JavaScript |          1 |          1 |          0 |          2 |
+| d:\system\static\home\js\vendor\jquery.waypoints.min.js                                    | JavaScript |          1 |          6 |          0 |          7 |
+| d:\system\static\home\js\vendor\owl.carousel.min.js                                        | JavaScript |          2 |          0 |          0 |          2 |
+| d:\system\static\home\js\vendor\respond.min.js                                             | JavaScript |          1 |          3 |          1 |          5 |
+| d:\system\static\plugins\bootstrap-3.4.1\css\bootstrap-theme.css                           | CSS        |        581 |          6 |          0 |        587 |
+| d:\system\static\plugins\bootstrap-3.4.1\css\bootstrap-theme.min.css                       | CSS        |          1 |          5 |          0 |          6 |
+| d:\system\static\plugins\bootstrap-3.4.1\css\bootstrap.css                                 | CSS        |      6,826 |          8 |          0 |      6,834 |
+| d:\system\static\plugins\bootstrap-3.4.1\css\bootstrap.min.css                             | CSS        |          1 |          5 |          0 |          6 |
+| d:\system\static\plugins\bootstrap-3.4.1\fonts\glyphicons-halflings-regular.svg            | XML        |        288 |          0 |          0 |        288 |
+| d:\system\static\plugins\bootstrap-3.4.1\js\bootstrap.js                                   | JavaScript |      1,752 |        211 |        618 |      2,581 |
+| d:\system\static\plugins\bootstrap-3.4.1\js\bootstrap.min.js                               | JavaScript |          1 |          5 |          0 |          6 |
+| d:\system\static\plugins\bootstrap-3.4.1\js\npm.js                                         | JavaScript |         12 |          1 |          0 |         13 |
+| d:\system\static\plugins\bootstrap-datepicker\css\bootstrap-datepicker.css                 | CSS        |        470 |          6 |          1 |        477 |
+| d:\system\static\plugins\bootstrap-datepicker\css\bootstrap-datepicker.min.css             | CSS        |          1 |          5 |          1 |          7 |
+| d:\system\static\plugins\bootstrap-datepicker\css\bootstrap-datepicker.standalone.css      | CSS        |        503 |          6 |          1 |        510 |
+| d:\system\static\plugins\bootstrap-datepicker\css\bootstrap-datepicker.standalone.min.css  | CSS        |          1 |          5 |          1 |          7 |
+| d:\system\static\plugins\bootstrap-datepicker\css\bootstrap-datepicker3.css                | CSS        |        676 |          6 |          1 |        683 |
+| d:\system\static\plugins\bootstrap-datepicker\css\bootstrap-datepicker3.min.css            | CSS        |          1 |          5 |          1 |          7 |
+| d:\system\static\plugins\bootstrap-datepicker\css\bootstrap-datepicker3.standalone.css     | CSS        |        705 |          6 |          1 |        712 |
+| d:\system\static\plugins\bootstrap-datepicker\css\bootstrap-datepicker3.standalone.min.css | CSS        |          1 |          5 |          1 |          7 |
+| d:\system\static\plugins\bootstrap-datepicker\js\bootstrap-datepicker.js                   | JavaScript |      1,770 |         90 |        180 |      2,040 |
+| d:\system\static\plugins\bootstrap-datepicker\js\bootstrap-datepicker.min.js               | JavaScript |          2 |          5 |          1 |          8 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker-en-CA.min.js    | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.ar-tn.min.js    | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.ar.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.az.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.bg.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.bm.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.bn.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.br.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.bs.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.ca.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.cs.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.cy.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.da.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.de.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.el.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.en-AU.min.js    | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.en-CA.min.js    | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.en-GB.min.js    | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.en-IE.min.js    | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.en-NZ.min.js    | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.en-ZA.min.js    | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.eo.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.es.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.et.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.eu.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.fa.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.fi.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.fo.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.fr-CH.min.js    | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.fr.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.gl.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.he.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.hi.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.hr.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.hu.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.hy.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.id.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.is.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.it-CH.min.js    | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.it.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.ja.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.ka.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.kh.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.kk.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.km.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.ko.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.kr.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.lt.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.lv.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.me.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.mk.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.mn.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.ms.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.nl-BE.min.js    | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.nl.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.no.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.oc.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.pl.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.pt-BR.min.js    | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.pt.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.ro.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.rs-latin.min.js | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.rs.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.ru.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.si.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.sk.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.sl.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.sq.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.sr-latin.min.js | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.sr.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.sv.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.sw.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.ta.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.tg.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.th.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.tk.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.tr.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.uk.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.uz-cyrl.min.js  | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.uz-latn.min.js  | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.vi.min.js       | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.zh-CN.min.js    | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\plugins\bootstrap-datepicker\locales\bootstrap-datepicker.zh-TW.min.js    | JavaScript |          1 |          0 |          0 |          1 |
+| d:\system\static\system\script.js                                                          | JavaScript |         50 |          0 |          5 |         55 |
+| d:\system\static\system\styles.css                                                         | CSS        |         62 |          0 |          2 |         64 |
+| d:\system\system\__init__.py                                                               | Python     |          0 |          0 |          1 |          1 |
+| d:\system\system\settings.py                                                               | Python     |         85 |         14 |         34 |        133 |
+| d:\system\system\urls.py                                                                   | Python     |         22 |          0 |          5 |         27 |
+| d:\system\system\wsgi.py                                                                   | Python     |         10 |          0 |          7 |         17 |
+| d:\system\templates\C++.html                                                               | HTML       |        197 |          0 |         39 |        236 |
+| d:\system\templates\cpp.html                                                               | HTML       |        240 |          0 |         36 |        276 |
+| d:\system\templates\css.html                                                               | HTML       |        298 |          0 |         50 |        348 |
+| d:\system\templates\cssl.html                                                              | HTML       |        227 |          0 |         40 |        267 |
+| d:\system\templates\end.html                                                               | HTML       |        141 |          0 |         27 |        168 |
+| d:\system\templates\html.html                                                              | HTML       |        361 |          0 |         59 |        420 |
+| d:\system\templates\index.html                                                             | HTML       |        246 |         21 |         54 |        321 |
+| d:\system\templates\js.html                                                                | HTML       |        323 |          0 |         57 |        380 |
+| d:\system\templates\jss.html                                                               | HTML       |        232 |          0 |         34 |        266 |
+| d:\system\templates\loginn.html                                                            | HTML       |        181 |          1 |         33 |        215 |
+| d:\system\templates\myself.html                                                            | HTML       |        196 |          0 |         25 |        221 |
+| d:\system\templates\python.html                                                            | HTML       |        289 |          0 |         62 |        351 |
+| d:\system\templates\pythons.html                                                           | HTML       |        397 |          0 |         65 |        462 |
+| d:\system\templates\register.html                                                          | HTML       |        208 |          1 |         34 |        243 |
+| Total                                                                                      |            |     80,805 |      1,214 |      4,414 |     86,433 |
++--------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
